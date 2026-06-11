@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://2yvq6yiiep7y"]
+
+[ext_resource type="Script" uid="uid://diogpnw6nc1vc" path="res://scripts/main_menu.gd" id="1_8ln24"]
+[ext_resource type="Texture2D" uid="uid://cfv8naux2b02u" path="res://assets/main_menu.png" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://c1jm3i16qq5pe" path="res://assets/play_button.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://dhtatumqsnmag" path="res://assets/levels_button.png" id="4_oa1go"]
+[ext_resource type="Texture2D" uid="uid://ch32055rwd61p" path="res://assets/exit_button.png" id="5_tbmy8"]
+
+[node name="Control" type="Control" unique_id=647949762]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ln24")
+
+[node name="MainMenu" type="Sprite2D" parent="." unique_id=209959788]
+position = Vector2(575, 325.25003)
+scale = Vector2(0.6524663, 0.61669576)
+texture = ExtResource("1_l6cm7")
+
+[node name="Button" type="Button" parent="." unique_id=1926567897]
+layout_mode = 0
+offset_left = 874.0
+offset_top = 144.0
+offset_right = 1153.0
+offset_bottom = 287.0
+icon = ExtResource("3_rtw2f")
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="." unique_id=1979508411]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 265.0
+offset_right = 1153.0
+offset_bottom = 440.0
+icon = ExtResource("4_oa1go")
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="." unique_id=931232512]
+layout_mode = 0
+offset_left = 879.0
+offset_top = 422.0
+offset_right = 1262.0
+offset_bottom = 555.0
+icon = ExtResource("5_tbmy8")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_play"]
+[connection signal="pressed" from="Button2" to="." method="_levels"]
+[connection signal="pressed" from="Button3" to="." method="_exit"]

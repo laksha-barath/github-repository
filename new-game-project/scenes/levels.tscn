@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://de0u4yd5o137y"]
+
+[ext_resource type="Texture2D" uid="uid://beos2tbbdnji4" path="res://assets/Screenshot 2026-05-25 at 11.41.33 PM.png" id="1_hcnff"]
+
+[node name="Node2D" type="Node2D" unique_id=715746615]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1371856620]
+position = Vector2(528, 341.00003)
+scale = Vector2(0.74289775, 0.6531792)
+enabled = false
+zoom = Vector2(1.1, 1.1)
+
+[node name="levels" type="Sprite2D" parent="." unique_id=2097863683]
+position = Vector2(513, 341.00003)
+scale = Vector2(0.7215909, 0.6531792)
+texture = ExtResource("1_hcnff")
