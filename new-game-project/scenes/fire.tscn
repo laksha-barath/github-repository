@@ -6,15 +6,26 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rach5"]
 size = Vector2(14, 15)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=287068724]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqmqg"]
+size = Vector2(40, 60)
+
+[node name="player1" type="CharacterBody2D" unique_id=287068724]
 script = ExtResource("1_xqmqg")
+
+[node name="fire" type="Sprite2D" parent="." unique_id=655358060]
+texture_filter = 1
+position = Vector2(53, 538)
+scale = Vector2(2.0664058, 1.8433659)
+texture = ExtResource("2_g5mbl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1954533105]
 position = Vector2(54, 560.5)
 shape = SubResource("RectangleShape2D_rach5")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=655358060]
-texture_filter = 1
-position = Vector2(53, 540)
-scale = Vector2(2.0664058, 1.8433659)
-texture = ExtResource("2_g5mbl")
+[node name="Area2D" type="Area2D" parent="." unique_id=1483098921]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1279176648]
+position = Vector2(54, 538)
+shape = SubResource("RectangleShape2D_xqmqg")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

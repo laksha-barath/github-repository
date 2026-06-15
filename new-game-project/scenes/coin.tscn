@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cpsebg2lxc8ax"]
+
+[ext_resource type="Script" uid="uid://by75mhymwx4aa" path="res://scenes/coin.tscn.gd" id="1_i64fm"]
+[ext_resource type="Texture2D" uid="uid://ds2jnsv3ucu88" path="res://assets/water_gem.png" id="2_11l1o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lat3g"]
+radius = 10.049875
+
+[node name="water_gem" type="Area2D" unique_id=25455862 groups=["water_gem"]]
+script = ExtResource("1_i64fm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=380424544]
+shape = SubResource("CircleShape2D_lat3g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1749262768]
+position = Vector2(-1.9073486e-06, 0)
+scale = Vector2(0.07589286, 0.07589284)
+texture = ExtResource("2_11l1o")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

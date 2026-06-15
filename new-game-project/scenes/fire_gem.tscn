@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cs45hxtwfg7jr"]
+
+[ext_resource type="Script" uid="uid://bbow0voa168b7" path="res://scripts/fire_gem.gd" id="1_s8oa3"]
+[ext_resource type="Texture2D" uid="uid://cl06o01yh3fjx" path="res://assets/Screenshot_2026-06-12_at_9.57.05_AM-removebg-preview.png" id="2_6ii4k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_in16y"]
+radius = 9.0
+
+[node name="fire_gem" type="Area2D" unique_id=1721365225 groups=["fire_gem"]]
+script = ExtResource("1_s8oa3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1933603599]
+shape = SubResource("CircleShape2D_in16y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1396370727]
+position = Vector2(2.9802322e-08, -7.450581e-09)
+scale = Vector2(0.06759259, 0.06759259)
+texture = ExtResource("2_6ii4k")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
