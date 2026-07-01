@@ -4,7 +4,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 var water_gem_counter = 0
-
+@export var timer: Timer
 @onready var coin_label = %Label
 
 func _physics_process(delta: float) -> void:
@@ -30,20 +30,10 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("water_gem"):
 		water_gem_counter += 1
 		coin_label.text = str(water_gem_counter)
+	if area.is_in_group("damager"):
+		await get_tree().create_timer(1).timeout
+		get_tree().reload_current_scene()
 	
-		
-		
-		
-		
-		#set_coin(water_gem_counter + 1)
-		#print(water_gem_counter)
-	
-# func set_coin(new_coin_count: int) -> void:
-	#water_gem_counter = new_coin_count
-	#coin_label.text = "water gem Count:" + str(water_gem_counter)
-
-
-
 	
 
 	

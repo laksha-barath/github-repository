@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bt3l54h43hspd"]
+
+[ext_resource type="Texture2D" uid="uid://pdrnbu62r0rt" path="res://assets/Screenshot_2026-06-17_at_1.14.50_PM-removebg-preview.png" id="1_r85p4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2td6k"]
+size = Vector2(86, 25)
+
+[node name="Area2D" type="Area2D" unique_id=1572156500 groups=["damager"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=540359489]
+position = Vector2(151.22095, 45)
+scale = Vector2(0.24418603, 0.24418604)
+texture = ExtResource("1_r85p4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=468396888]
+position = Vector2(149, 46.5)
+shape = SubResource("RectangleShape2D_2td6k")

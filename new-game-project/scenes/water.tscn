@@ -7,15 +7,15 @@
 size = Vector2(10, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s3811"]
-size = Vector2(39, 52)
+size = Vector2(46, 61)
 
 [node name="player2" type="CharacterBody2D" unique_id=1336688208]
 script = ExtResource("1_s3811")
 
 [node name="Water" type="Sprite2D" parent="." unique_id=290459488]
 texture_filter = 1
-position = Vector2(23, 621)
-scale = Vector2(0.83593744, 0.83593744)
+position = Vector2(26.625004, 617.375)
+scale = Vector2(0.9492188, 0.9492188)
 texture = ExtResource("2_p1n2c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1706461021]
@@ -26,7 +26,7 @@ shape = SubResource("RectangleShape2D_ewrsg")
 [node name="Area2D" type="Area2D" parent="." unique_id=1266538047]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=136889038]
-position = Vector2(26.5, 623)
+position = Vector2(30, 617)
 shape = SubResource("RectangleShape2D_s3811")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
