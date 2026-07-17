@@ -11,6 +11,6 @@ enabled = false
 zoom = Vector2(1.1, 1.1)
 
 [node name="levels" type="Sprite2D" parent="." unique_id=2097863683]
-position = Vector2(513, 341.00003)
-scale = Vector2(0.7215909, 0.6531792)
+position = Vector2(582.5, 341.00003)
+scale = Vector2(0.82031244, 0.6531792)
 texture = ExtResource("1_hcnff")

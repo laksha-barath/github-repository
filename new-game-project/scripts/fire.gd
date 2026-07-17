@@ -36,7 +36,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("fire_gem"):
 		fire_gem_counter += 1
 		coin_label.text = str(fire_gem_counter)
-	if area.is_in_group("damager"):
+	if area.is_in_group("water_damager"):
 		await get_tree().create_timer(1).timeout
 		get_tree().reload_current_scene()
 		

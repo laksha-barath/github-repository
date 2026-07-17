@@ -474,11 +474,11 @@ offset_bottom = 89.0
 text = "0s"
 label_settings = SubResource("LabelSettings_4u5i3")
 
-[node name="Area2D" parent="." unique_id=1572156500 instance=ExtResource("20_h0j4g")]
+[node name="water hazard" parent="." unique_id=1572156500 groups=["water_damager"] instance=ExtResource("20_h0j4g")]
 position = Vector2(687, 589)
 
-[node name="Area2D2" parent="." unique_id=1553138615 instance=ExtResource("21_87fqc")]
-position = Vector2(198, 581)
+[node name="fire hazard" parent="." unique_id=1553138615 groups=["fire_damager"] instance=ExtResource("21_87fqc")]
+position = Vector2(196, 580)
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=2026449029]
 position = Vector2(68, 414)
