@@ -1,5 +1,4 @@
 extends Control
-signal resume_requested
 
 
 func _on_resume_pressed() -> void:

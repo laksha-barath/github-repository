@@ -22,11 +22,10 @@
 [ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="18_oknyi"]
 [ext_resource type="PackedScene" uid="uid://bt3l54h43hspd" path="res://scenes/water_damager.tscn" id="20_h0j4g"]
 [ext_resource type="PackedScene" uid="uid://ck3e07hwb4mkd" path="res://scenes/fire_damager.tscn" id="21_87fqc"]
-[ext_resource type="Script" uid="uid://ckffmgl44kmu3" path="res://scripts/moving_platform_2d.gd" id="22_4u5i3"]
-[ext_resource type="Texture2D" uid="uid://d157n28s7sduy" path="res://assets/Screenshot 2026-06-19 at 10.14.13 AM.png" id="22_87fqc"]
+[ext_resource type="PackedScene" uid="uid://cx7tkdlhts1wk" path="res://scenes/moving_playform.tscn" id="23_51grn"]
 [ext_resource type="Texture2D" uid="uid://cjbi1r06mkkcj" path="res://assets/Screenshot 2026-06-24 at 12.42.57 PM.png" id="24_f2213"]
-[ext_resource type="Texture2D" uid="uid://d3p3a1luo4nw6" path="res://assets/Screenshot 2026-07-21 at 11.00.38 AM.png" id="26_8e4ax"]
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="26_51grn"]
+[ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="26_yc1wb"]
 [ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="28_yc1wb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4dvvg"]
@@ -66,9 +65,6 @@ size = Vector2(99, 21.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8e4ax"]
 size = Vector2(82.5, 19.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_87fqc"]
-size = Vector2(51, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2213"]
 size = Vector2(88.5, 85.5)
@@ -517,20 +513,9 @@ position = Vector2(231.58849, -68.28381)
 position = Vector2(142.57938, 51.21286)
 shape = SubResource("RectangleShape2D_8e4ax")
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=2026449029]
+[node name="AnimatableBody2D" parent="." unique_id=2123034417 instance=ExtResource("23_51grn")]
 position = Vector2(68, 414)
-script = ExtResource("22_4u5i3")
-offset = Vector2(0, -250)
-duration = 5.0
-
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=929694716]
-position = Vector2(119.000015, 27)
-scale = Vector2(0.21979123, 0.21979122)
-texture = ExtResource("22_87fqc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=216810825]
-position = Vector2(120, 27)
-shape = SubResource("RectangleShape2D_87fqc")
+duration = 3.0
 
 [node name="Button" type="Area2D" parent="." unique_id=161385926]
 position = Vector2(3, 0)
@@ -572,17 +557,7 @@ offset_right = 238.00002
 offset_bottom = -75.7321
 scale = Vector2(0.36807084, 0.3107658)
 
-[node name="pause_button" type="Button" parent="." unique_id=248432659]
-z_index = -1
-offset_left = 978.0
-offset_top = 33.0
-offset_right = 1108.0
-offset_bottom = 76.0
-
-[node name="pause" type="Sprite2D" parent="pause_button" unique_id=828522039]
-position = Vector2(64, 22.000015)
-scale = Vector2(0.24289769, 0.24289766)
-texture = ExtResource("26_8e4ax")
+[node name="pause_button" parent="." unique_id=1401001530 instance=ExtResource("26_yc1wb")]
 
 [node name="Screenshot20260801At11_45_24Am" type="Sprite2D" parent="." unique_id=232968116]
 position = Vector2(1042.9999, 98)

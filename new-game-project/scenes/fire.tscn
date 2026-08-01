@@ -19,10 +19,11 @@ scale = Vector2(2.0664058, 1.8433659)
 texture = ExtResource("2_g5mbl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1954533105]
+visible = false
 position = Vector2(54, 560.5)
 shape = SubResource("RectangleShape2D_rach5")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1483098921]
+[node name="Area2D" type="Area2D" parent="." unique_id=1483098921 groups=["players"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1279176648]
 position = Vector2(54, 538)

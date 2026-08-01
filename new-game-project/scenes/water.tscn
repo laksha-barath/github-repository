@@ -23,7 +23,7 @@ visible = false
 position = Vector2(25, 636)
 shape = SubResource("RectangleShape2D_ewrsg")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1266538047]
+[node name="Area2D" type="Area2D" parent="." unique_id=1266538047 groups=["players"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=136889038]
 position = Vector2(30, 617)

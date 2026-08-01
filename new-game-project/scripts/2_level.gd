@@ -17,3 +17,7 @@ func _on_button_body_entered(body: Node2D) -> void:
 
 func _on_button_body_exited(body: Node2D) -> void:
 	players_at_exit -=1 
+
+func _on_pause_button_pressed() -> void:
+	get_node("/root/Node2D/Control").show()
+	get_tree().paused = true

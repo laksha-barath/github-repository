@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b58puudddvb87"]
+
+[ext_resource type="Texture2D" uid="uid://d3p3a1luo4nw6" path="res://assets/Screenshot 2026-07-21 at 11.00.38 AM.png" id="1_5rmv1"]
+
+[node name="pause_button" type="Button" unique_id=1401001530]
+z_index = -1
+offset_left = 978.0
+offset_top = 33.0
+offset_right = 1108.0
+offset_bottom = 76.0
+
+[node name="pause" type="Sprite2D" parent="." unique_id=613022360]
+position = Vector2(64, 22.000015)
+scale = Vector2(0.24289769, 0.24289766)
+texture = ExtResource("1_5rmv1")

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bk6pkkqy4uy5s"]
+
+[ext_resource type="Texture2D" uid="uid://dbw11abqyoop" path="res://assets/Screenshot 2026-06-16 at 2.51.33 PM.png" id="1_jms2c"]
+[ext_resource type="Script" uid="uid://c18yepcgtd6k3" path="res://scenes/disappearing_tile.gd" id="1_yw7bd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jms2c"]
+size = Vector2(2, 1.7543861)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yw7bd"]
+size = Vector2(2.0869565, 1.7543861)
+
+[node name="disappearingTile" type="StaticBody2D" unique_id=599938080]
+scale = Vector2(2.76, 2.28)
+script = ExtResource("1_yw7bd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1034416573]
+physics_interpolation_mode = 1
+texture_filter = 1
+position = Vector2(-5.9604645e-08, -5.9604645e-08)
+scale = Vector2(0.010332664, 0.010332662)
+texture = ExtResource("1_jms2c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1896316226]
+shape = SubResource("RectangleShape2D_jms2c")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=629578773]
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1028904075]
+shape = SubResource("RectangleShape2D_yw7bd")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
