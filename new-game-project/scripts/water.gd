@@ -35,3 +35,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		await get_tree().create_timer(0.4).timeout
 		get_tree().reload_current_scene()
 	
+func die():
+	await get_tree().create_timer(0.2).timeout
+	get_tree().reload_current_scene()
+	

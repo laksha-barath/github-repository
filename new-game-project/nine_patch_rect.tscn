@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b5heq1emv7ufn"]
+
+[ext_resource type="Texture2D" uid="uid://lqi20bag21nb" path="res://assets/pause menu rect.png" id="1_cw11c"]
+
+[node name="NinePatchRect" type="NinePatchRect" unique_id=1323186137]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_cw11c")
+region_rect = Rect2(-1, 0, 449, 460.6892)
+
+[node name="PauseMenuRect" type="Sprite2D" parent="." unique_id=107795524]
+position = Vector2(1622, 888)
+scale = Vector2(3.0357144, 2.53125)
+texture = ExtResource("1_cw11c")

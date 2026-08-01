@@ -1,0 +1,23 @@
+extends Area2D
+
+@export var speed = 500
+var direction = Vector2.ZERO
+@onready var pause_menu = $PauseMenu
+
+
+func _process(delta):
+	position += direction * speed * delta
+
+func _on_area_entered(area):
+
+	var player = area.get_parent()
+
+	if player.is_in_group("players"):
+		player.die()
+		queue_free()
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
+	
+func _on_pause_button_pressed():
+	pause_menu.show()

@@ -1,0 +1,14 @@
+extends Area2D
+
+@export var speed = 500
+var direction = Vector2.ZERO
+
+func _process(delta):
+	position += direction * speed * delta
+
+func _on_area_entered(area):
+	var player = area.get_parent()
+
+	if player.is_in_group("players"):
+		player.die()
+		queue_free()
