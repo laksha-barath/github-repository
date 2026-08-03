@@ -21,3 +21,8 @@ func _on_button_body_exited(body: Node2D) -> void:
 func _on_pause_button_pressed() -> void:
 	get_node("/root/Node2D/Control").show()
 	get_tree().paused = true
+
+
+func _on_timer_timeout() -> void:
+	time += 1
+	time_label.text = str(time)

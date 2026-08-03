@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cg01euvtqxdnq"]
 
 [ext_resource type="Script" uid="uid://c0qs717khq5gy" path="res://scripts/2_level.gd" id="1_ka6e5"]
+[ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="2_kffnw"]
 [ext_resource type="PackedScene" uid="uid://darmbns6e3i5y" path="res://scenes/water.tscn" id="2_owppo"]
 [ext_resource type="PackedScene" uid="uid://2ib8jjwsdiaf" path="res://scenes/fire.tscn" id="3_owppo"]
 [ext_resource type="Texture2D" uid="uid://b8l8ics2lcrj8" path="res://assets/tile map .png" id="4_74etk"]
@@ -10,12 +11,15 @@
 [ext_resource type="PackedScene" uid="uid://cs45hxtwfg7jr" path="res://scenes/fire_gem.tscn" id="9_l8o8q"]
 [ext_resource type="PackedScene" uid="uid://bf4d4x86lgxyo" path="res://scenes/water_gem.tscn" id="10_wd8ji"]
 [ext_resource type="Script" uid="uid://beixlmi1s6td" path="res://scenes/BulletSpawner.gd" id="11_1r5mr"]
+[ext_resource type="PackedScene" uid="uid://dtclgpudk4ih3" path="res://scenes/Bullet.tscn" id="12_l8o8q"]
 [ext_resource type="Texture2D" uid="uid://cjbi1r06mkkcj" path="res://assets/Screenshot 2026-06-24 at 12.42.57 PM.png" id="12_xbefn"]
 [ext_resource type="PackedScene" uid="uid://bk6pkkqy4uy5s" path="res://scenes/disappearing_tile.tscn" id="14_wd8ji"]
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="14_xhsy5"]
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="15_ue8cd"]
+[ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="17_pt7em"]
+[ext_resource type="PackedScene" uid="uid://ba72tpgnbuoda" path="res://scenes/bg_music.tscn" id="18_pt7em"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4qtk"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kffnw"]
 texture = ExtResource("4_74etk")
 texture_region_size = Vector2i(15, 11)
 0:0/0 = 0
@@ -26,7 +30,7 @@ texture_region_size = Vector2i(15, 11)
 [sub_resource type="TileSet" id="TileSet_o20ae"]
 tile_size = Vector2i(15, 11)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_s4qtk")
+sources/0 = SubResource("TileSetAtlasSource_kffnw")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o20ae"]
 texture = ExtResource("5_s4qtk")
@@ -51,9 +55,15 @@ font_color = Color(0.54509807, 0.54901963, 0.5529412, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xhsy5"]
 size = Vector2(88.5, 85.5)
 
-[node name="Node2D" type="Node2D" unique_id=665319682]
+[sub_resource type="LabelSettings" id="LabelSettings_kffnw"]
+font_size = 32
+font_color = Color(0.57254905, 0.57254905, 0.57254905, 1)
+
+[node name="Node2D" type="Node2D" unique_id=665319682 node_paths=PackedStringArray("time_label", "timer")]
 position = Vector2(-25, -7)
 script = ExtResource("1_ka6e5")
+time_label = NodePath("Timer/label3")
+timer = NodePath("Timer")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=903748630]
 position = Vector2(592, 351)
@@ -115,20 +125,21 @@ position = Vector2(105, 513)
 [node name="water_gem" parent="." unique_id=25455862 instance=ExtResource("10_wd8ji")]
 position = Vector2(1110, 503)
 
-[node name="Button" type="Area2D" parent="." unique_id=130020049]
+[node name="door" type="Area2D" parent="." unique_id=130020049]
 position = Vector2(3, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Button" unique_id=195860015]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door" unique_id=195860015]
 position = Vector2(607, 142)
 shape = SubResource("RectangleShape2D_xhsy5")
 
-[node name="Screenshot20260624At12_42_57Pm" type="Sprite2D" parent="Button" unique_id=1566721198]
+[node name="Screenshot20260624At12_42_57Pm" type="Sprite2D" parent="door" unique_id=1566721198]
 position = Vector2(608, 138)
 scale = Vector2(0.14462404, 0.13585433)
 texture = ExtResource("12_xbefn")
 
 [node name="BulletSpawner" type="Node2D" parent="." unique_id=383235258]
 script = ExtResource("11_1r5mr")
+bullet_scene = ExtResource("12_l8o8q")
 
 [node name="TileMap" type="Sprite2D" parent="." unique_id=1906996948]
 position = Vector2(1054, 584.99994)
@@ -314,6 +325,37 @@ offset_top = 55.0
 offset_right = 1136.0
 offset_bottom = 98.0
 
-[connection signal="body_entered" from="Button" to="." method="_on_button_body_entered"]
-[connection signal="body_exited" from="Button" to="." method="_on_button_body_exited"]
+[node name="Screenshot20260616At11_08_03Am" type="Sprite2D" parent="." unique_id=1641569669]
+position = Vector2(595, 438)
+scale = Vector2(0.41477832, 0.39761898)
+texture = ExtResource("17_pt7em")
+
+[node name="Timer" type="Timer" parent="." unique_id=103811366]
+autostart = true
+
+[node name="Screenshot20260801At11_45_24Am" type="Sprite2D" parent="Timer" unique_id=1618477737]
+position = Vector2(1043, 112.00001)
+scale = Vector2(0.12981744, 0.11640211)
+texture = ExtResource("2_kffnw")
+
+[node name="label3" type="Label" parent="Timer" unique_id=356766417]
+z_index = 1
+offset_left = 1056.0
+offset_top = 89.0
+offset_right = 1143.0
+offset_bottom = 159.0
+text = "0s"
+label_settings = SubResource("LabelSettings_kffnw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Control2" parent="." unique_id=1711678437 instance=ExtResource("18_pt7em")]
+offset_left = 1062.0
+offset_top = 144.0
+offset_right = 1062.0
+offset_bottom = 144.0
+scale = Vector2(0.68, 0.64)
+
+[connection signal="body_entered" from="door" to="." method="_on_button_body_entered"]
+[connection signal="body_exited" from="door" to="." method="_on_button_body_exited"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

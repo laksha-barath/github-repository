@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ba72tpgnbuoda"]
+
+[ext_resource type="AudioStream" uid="uid://cltqk2j70uaov" path="res://assets/Justin_Bieber_-_DAISIES_(mp3.pm).mp3" id="1_f6gl3"]
+[ext_resource type="Texture2D" uid="uid://54sjnu3qpb2v" path="res://assets/Mute Button unmuted1.png" id="2_3sx0t"]
+[ext_resource type="Texture2D" uid="uid://cg5tjr8hxwp2o" path="res://assets/Mute Button muted1.png" id="3_fgucq"]
+[ext_resource type="Script" uid="uid://dyc0ojksq4sa4" path="res://scenes/mute_button.gd" id="4_8rjbd"]
+
+[node name="Control" type="Control" unique_id=1711678437]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1643193221]
+stream = ExtResource("1_f6gl3")
+autoplay = true
+bus = &"Music"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=615760282]
+texture_filter = 1
+layout_mode = 0
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 97.0
+offset_bottom = 87.92683
+scale = Vector2(5.2551823, 6.1059866)
+toggle_mode = true
+texture_normal = ExtResource("2_3sx0t")
+texture_pressed = ExtResource("3_fgucq")
+script = ExtResource("4_8rjbd")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

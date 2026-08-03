@@ -122,7 +122,6 @@ position = Vector2(1386.6223, 1808.9324)
 scale = Vector2(4.5016446, 4.5016446)
 texture = ExtResource("5_7l7mv")
 
-[connection signal="resume_requested" from="." to="." method="_on_resume_requested"]
 [connection signal="pressed" from="resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]

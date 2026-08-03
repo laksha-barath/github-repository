@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dwy7f7ij1ye76"]
+
+[ext_resource type="Texture2D" uid="uid://cjbi1r06mkkcj" path="res://assets/Screenshot 2026-06-24 at 12.42.57 PM.png" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhsy5"]
+size = Vector2(88.5, 85.5)
+
+[node name="door" type="Area2D" unique_id=1406309531]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1280099262]
+position = Vector2(607, 142)
+shape = SubResource("RectangleShape2D_xhsy5")
+
+[node name="Screenshot20260624At12_42_57Pm" type="Sprite2D" parent="." unique_id=858923548]
+position = Vector2(608, 138)
+scale = Vector2(0.14462404, 0.13585433)
+texture = ExtResource("1_hpvv5")
