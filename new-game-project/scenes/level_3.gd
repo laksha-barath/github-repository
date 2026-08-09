@@ -24,9 +24,10 @@ func _on_pause_button_pressed() -> void:
 
 
 func _on_door_body_entered(body: Node2D) -> void:
-	players_at_exit +=1 
-	if players_at_exit >=max_players:
-		get_tree().change_scene_to_file("res://scenes/levels.tscn")
+	if body is CharacterBody2D:
+		players_at_exit += 1 
+		if players_at_exit >= max_players:
+			get_tree().change_scene_to_file("res://scenes/levels.tscn")
 
 
 func _on_door_body_exited(body: Node2D) -> void:

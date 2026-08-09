@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://b8l8ics2lcrj8" path="res://assets/tile map .png" id="27_yc1wb"]
 [ext_resource type="PackedScene" uid="uid://ba72tpgnbuoda" path="res://scenes/bg_music.tscn" id="28_5o8nl"]
 [ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="28_yc1wb"]
+[ext_resource type="PackedScene" uid="uid://106ihq35tf48" path="res://scenes/common_damager.tscn" id="29_5o8nl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4dvvg"]
 texture = ExtResource("1_8mhku")
@@ -82,6 +83,9 @@ size = Vector2(82.5, 19.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2213"]
 size = Vector2(88.5, 85.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7j5u"]
+size = Vector2(386.22998, 115.27112)
 
 [node name="Node2D" type="Node2D" unique_id=499038079 node_paths=PackedStringArray("time_label", "timer")]
 position = Vector2(2, 9)
@@ -188,30 +192,12 @@ scale = Vector2(1.2, 1.2454191)
 position = Vector2(150, 48.17657)
 shape = SubResource("RectangleShape2D_8imdr")
 
-[node name="water hazard" parent="water hazard" unique_id=1154296484 instance=ExtResource("20_h0j4g")]
-visible = false
-position = Vector2(-190.83334, -62.629517)
-scale = Vector2(0.73333335, 0.9036469)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="water hazard/water hazard" unique_id=1794350592]
-position = Vector2(152.27274, 47.09359)
-scale = Vector2(1, 0.96788037)
-shape = SubResource("RectangleShape2D_8imdr")
-
 [node name="fire hazard" parent="." unique_id=1553138615 groups=["fire_damager"] instance=ExtResource("21_87fqc")]
 position = Vector2(165.99998, 581)
 scale = Vector2(1.2133591, 1.1715809)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="fire hazard" unique_id=1118083066]
 position = Vector2(140.10692, 56.33414)
-shape = SubResource("RectangleShape2D_8e4ax")
-
-[node name="fire hazard" parent="fire hazard" unique_id=2041579574 groups=["fire_damager"] instance=ExtResource("21_87fqc")]
-visible = false
-position = Vector2(231.58849, -68.28381)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="fire hazard/fire hazard" unique_id=2067308229]
-position = Vector2(142.57938, 51.21286)
 shape = SubResource("RectangleShape2D_8e4ax")
 
 [node name="AnimatableBody2D" parent="." unique_id=2123034417 instance=ExtResource("23_51grn")]
@@ -343,12 +329,22 @@ position = Vector2(-3458.7021, 1847.0454)
 scale = Vector2(7.703125, 8.590908)
 texture = ExtResource("18_oknyi")
 
-[node name="Control2" parent="." unique_id=1711678437 instance=ExtResource("28_5o8nl")]
+[node name="bg music" parent="." unique_id=1711678437 instance=ExtResource("28_5o8nl")]
 offset_left = 1065.0
 offset_top = 128.0
 offset_right = 1065.0
 offset_bottom = 128.0
-scale = Vector2(0.47999024, 0.44)
+scale = Vector2(0.47999024, 0.4379347)
+
+[node name="common_damager" parent="." unique_id=158528877 instance=ExtResource("29_5o8nl")]
+visible = false
+position = Vector2(556.00006, 537.99994)
+scale = Vector2(0.2578209, 0.2515809)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="common_damager" unique_id=347547084]
+position = Vector2(183.11499, 109.30859)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_q7j5u")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Button" to="." method="_door_entered"]

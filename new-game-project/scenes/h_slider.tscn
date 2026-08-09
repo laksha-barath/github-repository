@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cgieexg25v27d"]
+
+[ext_resource type="Script" uid="uid://bihvhfhmnyf3g" path="res://bg_audio_slider.gd" id="1_8jbbo"]
+
+[node name="HSlider" type="HSlider" unique_id=2032114236]
+offset_left = 58.0
+offset_top = 1.0
+offset_right = 410.0
+offset_bottom = 170.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("1_8jbbo")

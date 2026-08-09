@@ -22,6 +22,7 @@ position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_a0ysx")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1776878233]
-rect = Rect2(-10, -3, 20, 9)
+rect = Rect2(-12, -4, 24, 11)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

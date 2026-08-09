@@ -17,7 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="14_xhsy5"]
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="15_ue8cd"]
 [ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="17_pt7em"]
-[ext_resource type="PackedScene" uid="uid://ba72tpgnbuoda" path="res://scenes/bg_music.tscn" id="18_pt7em"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kffnw"]
 texture = ExtResource("4_74etk")
@@ -60,7 +59,7 @@ font_size = 32
 font_color = Color(0.57254905, 0.57254905, 0.57254905, 1)
 
 [node name="Node2D" type="Node2D" unique_id=665319682 node_paths=PackedStringArray("time_label", "timer")]
-position = Vector2(-25, -7)
+position = Vector2(-74, -21)
 script = ExtResource("1_ka6e5")
 time_label = NodePath("Timer/label3")
 timer = NodePath("Timer")
@@ -81,11 +80,11 @@ texture = ExtResource("4_s4qtk")
 
 [node name="player1" parent="." unique_id=287068724 instance=ExtResource("3_owppo")]
 z_index = 2
-position = Vector2(540, 148)
+position = Vector2(606, 141)
 
 [node name="player2" parent="." unique_id=1336688208 instance=ExtResource("2_owppo")]
 z_index = 2
-position = Vector2(615, 67)
+position = Vector2(562, 66)
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=963683713]
 z_index = -2
@@ -340,20 +339,13 @@ texture = ExtResource("2_kffnw")
 
 [node name="label3" type="Label" parent="Timer" unique_id=356766417]
 z_index = 1
-offset_left = 1056.0
-offset_top = 89.0
-offset_right = 1143.0
-offset_bottom = 159.0
+offset_left = 975.0
+offset_top = 17.0
+offset_right = 1062.0
+offset_bottom = 87.0
 text = "0s"
 label_settings = SubResource("LabelSettings_kffnw")
 metadata/_edit_use_anchors_ = true
-
-[node name="Control2" parent="." unique_id=1711678437 instance=ExtResource("18_pt7em")]
-offset_left = 1062.0
-offset_top = 144.0
-offset_right = 1062.0
-offset_bottom = 144.0
-scale = Vector2(0.68, 0.64)
 
 [connection signal="body_entered" from="door" to="." method="_on_button_body_entered"]
 [connection signal="body_exited" from="door" to="." method="_on_button_body_exited"]

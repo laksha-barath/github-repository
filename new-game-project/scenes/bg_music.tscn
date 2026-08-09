@@ -12,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.91999906)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1643193221]
 stream = ExtResource("1_f6gl3")
@@ -21,11 +22,11 @@ bus = &"Music"
 [node name="TextureButton" type="TextureButton" parent="." unique_id=615760282]
 texture_filter = 1
 layout_mode = 0
-offset_left = 18.0
-offset_top = 7.0
-offset_right = 97.0
-offset_bottom = 87.92683
-scale = Vector2(5.2551823, 6.1059866)
+offset_left = 1049.0
+offset_top = 160.86974
+offset_right = 1072.2152
+offset_bottom = 185.07979
+scale = Vector2(3.7892814, 3.7402499)
 toggle_mode = true
 texture_normal = ExtResource("2_3sx0t")
 texture_pressed = ExtResource("3_fgucq")

@@ -15,7 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="13_got4s"]
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="14_e40mx"]
 [ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="15_e40mx"]
-[ext_resource type="PackedScene" uid="uid://ba72tpgnbuoda" path="res://scenes/bg_music.tscn" id="16_a114e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b72m1"]
 size = Vector2(66, 85.75)
@@ -253,13 +252,6 @@ offset_bottom = 158.0
 text = "0s"
 label_settings = SubResource("LabelSettings_e40mx")
 metadata/_edit_use_anchors_ = true
-
-[node name="Control2" parent="." unique_id=1711678437 instance=ExtResource("16_a114e")]
-offset_left = 1037.0
-offset_top = 135.0
-offset_right = 1037.0
-offset_bottom = 135.0
-scale = Vector2(0.67999756, 0.56000125)
 
 [connection signal="body_entered" from="door" to="." method="_on_door_body_entered"]
 [connection signal="body_exited" from="door" to="." method="_on_door_body_exited"]
