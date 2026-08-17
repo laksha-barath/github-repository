@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://beos2tbbdnji4" path="res://assets/Screenshot 2026-05-25 at 11.41.33 PM.png" id="1_hcnff"]
 
-[node name="Node2D" type="Node2D" unique_id=715746615]
+[node name="levels" type="Node2D" unique_id=715746615]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1371856620]
 position = Vector2(528, 341.00003)

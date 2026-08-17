@@ -38,4 +38,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 func die():
 	await get_tree().create_timer(0.2).timeout
 	get_tree().reload_current_scene()
-	
+
+func _ready() -> void:
+	BgMusic.hide()
+	BgMusic.get_child(0).stop()

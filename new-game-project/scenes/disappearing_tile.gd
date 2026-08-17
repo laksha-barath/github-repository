@@ -26,3 +26,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		$Sprite2D.visible = true
 
 		triggered = false
+func _ready() -> void:
+	BgMusic.hide()
+	BgMusic.get_child(0).stop()

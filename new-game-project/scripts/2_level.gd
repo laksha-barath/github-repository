@@ -26,3 +26,7 @@ func _on_pause_button_pressed() -> void:
 func _on_timer_timeout() -> void:
 	time += 1
 	time_label.text = str(time)
+
+func _ready() -> void:
+	BgMusic.get_child(0).play()
+	

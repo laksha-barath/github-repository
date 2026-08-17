@@ -11,7 +11,8 @@ func _ready() -> void:
 	tween.set_loops().set_parallel(false)
 	tween.tween_property(self, "position", original_position + offset, duration / 2)
 	tween.tween_property(self, "position", original_position, duration / 2)
-	
+	BgMusic.hide()
+	BgMusic.get_child(0).stop()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

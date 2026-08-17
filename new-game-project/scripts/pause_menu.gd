@@ -17,3 +17,7 @@ func _on_settings_pressed() -> void:
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
+
+func _ready() -> void:
+	BgMusic.hide()
+	BgMusic.get_child(0).stop()

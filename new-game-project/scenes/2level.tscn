@@ -333,16 +333,16 @@ texture = ExtResource("17_pt7em")
 autostart = true
 
 [node name="Screenshot20260801At11_45_24Am" type="Sprite2D" parent="Timer" unique_id=1618477737]
-position = Vector2(1043, 112.00001)
+position = Vector2(996, 102)
 scale = Vector2(0.12981744, 0.11640211)
 texture = ExtResource("2_kffnw")
 
 [node name="label3" type="Label" parent="Timer" unique_id=356766417]
 z_index = 1
-offset_left = 975.0
-offset_top = 17.0
-offset_right = 1062.0
-offset_bottom = 87.0
+offset_left = 982.0
+offset_top = 78.0
+offset_right = 1069.0
+offset_bottom = 148.0
 text = "0s"
 label_settings = SubResource("LabelSettings_kffnw")
 metadata/_edit_use_anchors_ = true

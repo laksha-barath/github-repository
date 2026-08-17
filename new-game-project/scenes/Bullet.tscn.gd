@@ -4,6 +4,7 @@ extends Area2D
 var direction = Vector2.ZERO
 
 
+
 func _process(delta):
 	position += direction * speed * delta
 
