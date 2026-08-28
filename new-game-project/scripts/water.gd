@@ -41,4 +41,4 @@ func die():
 
 func _ready() -> void:
 	BgMusic.hide()
-	BgMusic.get_child(0).stop()
+	#BgMusic.get_child(0).stop()

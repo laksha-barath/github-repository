@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b8nr63q64me5y"]
+
+[ext_resource type="Script" uid="uid://c6yyr6x8uiewr" path="res://scenes/settings_button.gd" id="1_j1mmx"]
+[ext_resource type="Texture2D" uid="uid://di3vi7fe3hma1" path="res://assets/Screenshot_2026-08-26_at_1.12.45_PM-removebg-preview.png" id="1_jxe1r"]
+
+[node name="Button" type="Button" unique_id=829396674]
+offset_left = 19.0
+offset_top = 3.0
+offset_right = 109.0
+offset_bottom = 90.0
+script = ExtResource("1_j1mmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1527388811]
+position = Vector2(44.000004, 43)
+scale = Vector2(0.44036695, 0.44036698)
+texture = ExtResource("1_jxe1r")

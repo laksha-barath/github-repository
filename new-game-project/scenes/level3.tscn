@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="13_got4s"]
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="14_e40mx"]
 [ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="15_e40mx"]
+[ext_resource type="PackedScene" uid="uid://c8l80emx6xhqg" path="res://scenes/settings.tscn" id="16_a114e"]
+[ext_resource type="PackedScene" uid="uid://b8nr63q64me5y" path="res://scenes/settings_button.tscn" id="17_y1e0c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b72m1"]
 size = Vector2(66, 85.75)
@@ -253,7 +255,24 @@ text = "0s"
 label_settings = SubResource("LabelSettings_e40mx")
 metadata/_edit_use_anchors_ = true
 
+[node name="Control2" parent="." unique_id=643046507 instance=ExtResource("16_a114e")]
+visible = false
+z_index = 2
+offset_left = 43.0
+offset_top = 9.0
+offset_right = 83.0
+offset_bottom = 49.0
+scale = Vector2(1.36, 1.3200003)
+
+[node name="Button" parent="." unique_id=829396674 instance=ExtResource("17_y1e0c")]
+offset_left = 1048.0
+offset_top = 141.0
+offset_right = 1138.0
+offset_bottom = 228.0
+scale = Vector2(0.47999758, 0.4799993)
+
 [connection signal="body_entered" from="door" to="." method="_on_door_body_entered"]
 [connection signal="body_exited" from="door" to="." method="_on_door_body_exited"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

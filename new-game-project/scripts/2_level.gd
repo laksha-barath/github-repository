@@ -29,4 +29,7 @@ func _on_timer_timeout() -> void:
 
 func _ready() -> void:
 	BgMusic.get_child(0).play()
-	
+
+func _on_button_pressed() -> void:
+	get_node("/root/Node2D/Control2").show()
+	get_tree().paused = true

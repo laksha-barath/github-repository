@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cuq0oflqcu1gw"]
+
+[ext_resource type="Texture2D" uid="uid://cg3in8hitsgpu" path="res://assets/Screenshot_2026-08-27_at_2.48.17_PM-removebg-preview.png" id="1_n2mfp"]
+
+[node name="go_back_Button" type="Button" unique_id=1868898079]
+offset_left = 6.0
+offset_top = 8.0
+offset_right = 296.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.19614357, 0.19614291, 0.19614306, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1249213532]
+modulate = Color(0.7708395, 0.77083945, 0.77083945, 1)
+position = Vector2(107.00003, 90.99999)
+scale = Vector2(1.0982141, 1.126087)
+texture = ExtResource("1_n2mfp")

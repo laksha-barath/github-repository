@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="14_xhsy5"]
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="15_ue8cd"]
 [ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="17_pt7em"]
+[ext_resource type="PackedScene" uid="uid://c8l80emx6xhqg" path="res://scenes/settings.tscn" id="18_aqurn"]
+[ext_resource type="PackedScene" uid="uid://b8nr63q64me5y" path="res://scenes/settings_button.tscn" id="19_n6jhg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kffnw"]
 texture = ExtResource("4_74etk")
@@ -80,7 +82,7 @@ texture = ExtResource("4_s4qtk")
 
 [node name="player1" parent="." unique_id=287068724 instance=ExtResource("3_owppo")]
 z_index = 2
-position = Vector2(606, 141)
+position = Vector2(593, 147)
 
 [node name="player2" parent="." unique_id=1336688208 instance=ExtResource("2_owppo")]
 z_index = 2
@@ -347,7 +349,24 @@ text = "0s"
 label_settings = SubResource("LabelSettings_kffnw")
 metadata/_edit_use_anchors_ = true
 
+[node name="Control2" parent="." unique_id=643046507 instance=ExtResource("18_aqurn")]
+visible = false
+z_index = 2
+offset_left = 43.0
+offset_top = 9.0
+offset_right = 83.0
+offset_bottom = 49.0
+scale = Vector2(1.36, 1.3200003)
+
+[node name="Button" parent="." unique_id=829396674 instance=ExtResource("19_n6jhg")]
+offset_left = 1089.0001
+offset_top = 152.0
+offset_right = 1179.0001
+offset_bottom = 239.0
+scale = Vector2(0.47999758, 0.4799993)
+
 [connection signal="body_entered" from="door" to="." method="_on_button_body_entered"]
 [connection signal="body_exited" from="door" to="." method="_on_button_body_exited"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

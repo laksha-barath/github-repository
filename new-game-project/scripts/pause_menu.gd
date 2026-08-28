@@ -12,12 +12,13 @@ func _on_levels_pressed() -> void:
 
 
 func _on_settings_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/settings.tscn")
 
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
 
-func _ready() -> void:
-	BgMusic.hide()
-	BgMusic.get_child(0).stop()
+#func _ready() -> void:
+	#BgMusic.hide()
+	#BgMusic.get_child(0).stop()
