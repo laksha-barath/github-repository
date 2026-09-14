@@ -26,9 +26,10 @@
 [ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="26_51grn"]
 [ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="26_yc1wb"]
 [ext_resource type="Texture2D" uid="uid://b8l8ics2lcrj8" path="res://assets/tile map .png" id="27_yc1wb"]
-[ext_resource type="PackedScene" uid="uid://ba72tpgnbuoda" path="res://scenes/bg_music.tscn" id="28_5o8nl"]
 [ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="28_yc1wb"]
 [ext_resource type="PackedScene" uid="uid://106ihq35tf48" path="res://scenes/common_damager.tscn" id="29_5o8nl"]
+[ext_resource type="PackedScene" uid="uid://b8nr63q64me5y" path="res://scenes/settings_button.tscn" id="29_q7j5u"]
+[ext_resource type="PackedScene" uid="uid://c8l80emx6xhqg" path="res://scenes/settings.tscn" id="30_q7j5u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4dvvg"]
 texture = ExtResource("1_8mhku")
@@ -329,13 +330,6 @@ position = Vector2(-3458.7021, 1847.0454)
 scale = Vector2(7.703125, 8.590908)
 texture = ExtResource("18_oknyi")
 
-[node name="bg music" parent="." unique_id=1711678437 instance=ExtResource("28_5o8nl")]
-offset_left = 1065.0
-offset_top = 128.0
-offset_right = 1065.0
-offset_bottom = 128.0
-scale = Vector2(0.47999024, 0.4379347)
-
 [node name="common_damager" parent="." unique_id=158528877 instance=ExtResource("29_5o8nl")]
 visible = false
 position = Vector2(556.00006, 537.99994)
@@ -346,7 +340,23 @@ position = Vector2(183.11499, 109.30859)
 scale = Vector2(1, 1.0000002)
 shape = SubResource("RectangleShape2D_q7j5u")
 
+[node name="Button2" parent="." unique_id=829396674 instance=ExtResource("29_q7j5u")]
+offset_left = 1067.0
+offset_top = 130.0
+offset_right = 1157.0
+offset_bottom = 217.0
+scale = Vector2(0.47999758, 0.4799993)
+
+[node name="Control2" parent="." unique_id=643046507 instance=ExtResource("30_q7j5u")]
+z_index = 5
+offset_left = 143.0
+offset_top = 50.0
+offset_right = 183.0
+offset_bottom = 90.0
+scale = Vector2(1.1128246, 1.0454482)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Button" to="." method="_door_entered"]
 [connection signal="body_exited" from="Button" to="." method="_door_exited"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

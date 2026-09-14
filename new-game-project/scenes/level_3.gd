@@ -9,8 +9,7 @@ var max_players: int = 2
 
 
 func _ready() -> void:
-	pass
-	#timer.stop()
+	BgMusic.get_child(0).play()
 
 
 func _on_timer_timeout() -> void:

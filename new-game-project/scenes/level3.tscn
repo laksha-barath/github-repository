@@ -73,11 +73,11 @@ texture = ExtResource("1_f0ip2")
 
 [node name="player1" parent="." unique_id=287068724 instance=ExtResource("2_jyq2n")]
 z_index = 1
-position = Vector2(439, 156)
+position = Vector2(621, 161)
 
 [node name="player2" parent="." unique_id=1336688208 instance=ExtResource("3_7uttt")]
 z_index = 1
-position = Vector2(597, 78)
+position = Vector2(466, 82)
 
 [node name="door" type="Area2D" parent="." unique_id=1134161970]
 position = Vector2(3, 0)
@@ -165,34 +165,34 @@ offset = Vector2(0, -150)
 duration = 4.0
 
 [node name="water_gem" parent="." unique_id=25455862 instance=ExtResource("10_fh4ka")]
-position = Vector2(415, 190)
+position = Vector2(699, 188)
 
 [node name="water_gem2" parent="." unique_id=417454054 instance=ExtResource("10_fh4ka")]
-position = Vector2(1061, 271)
+position = Vector2(69, 268)
 
 [node name="water_gem3" parent="." unique_id=461625579 instance=ExtResource("10_fh4ka")]
-position = Vector2(189, 179)
+position = Vector2(927, 170)
 
 [node name="water_gem4" parent="." unique_id=31241270 instance=ExtResource("10_fh4ka")]
-position = Vector2(774, 166)
+position = Vector2(339, 167)
 
 [node name="water_gem5" parent="." unique_id=617948247 instance=ExtResource("10_fh4ka")]
-position = Vector2(643, 376)
+position = Vector2(496, 372)
 
 [node name="fire_gem" parent="." unique_id=1721365225 instance=ExtResource("11_qewby")]
-position = Vector2(700, 192)
+position = Vector2(413, 185)
 
 [node name="fire_gem2" parent="." unique_id=211671456 instance=ExtResource("11_qewby")]
-position = Vector2(929, 176)
+position = Vector2(192, 173)
 
 [node name="fire_gem3" parent="." unique_id=1621851760 instance=ExtResource("11_qewby")]
-position = Vector2(68, 268)
+position = Vector2(1064, 268)
 
 [node name="fire_gem4" parent="." unique_id=729126083 instance=ExtResource("11_qewby")]
-position = Vector2(493, 380)
+position = Vector2(645, 375)
 
 [node name="fire_gem5" parent="." unique_id=412118528 instance=ExtResource("11_qewby")]
-position = Vector2(341, 170)
+position = Vector2(775, 159)
 
 [node name="gem counter" type="Sprite2D" parent="." unique_id=855604362]
 position = Vector2(100, 76)

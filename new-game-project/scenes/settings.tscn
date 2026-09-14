@@ -35,10 +35,10 @@ font_color = Color(0.7602973, 0.76029724, 0.7602968, 1)
 process_mode = 3
 layout_mode = 3
 anchors_preset = 0
-offset_left = -4.0
-offset_top = -2.0
-offset_right = 36.0
-offset_bottom = 38.0
+offset_left = 22.0
+offset_top = -1.0
+offset_right = 62.0
+offset_bottom = 39.0
 script = ExtResource("1_es4n0")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=714279408]
@@ -49,14 +49,6 @@ offset_right = 423.0
 offset_bottom = 456.0
 scale = Vector2(0.8155953, 0.79999876)
 color = Color(0.59717613, 0.59717613, 0.5971761, 1)
-
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=1799347821]
-layout_mode = 0
-offset_left = 1405.0
-offset_top = 230.0
-offset_right = 2608.0
-offset_bottom = 957.0
-color = Color(0.11372549, 0.11372549, 0.11372549, 0.49019608)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=492457373]
 position = Vector2(590, 373.00003)
@@ -74,11 +66,12 @@ text = "Bg volume "
 label_settings = SubResource("LabelSettings_4ppmf")
 
 [node name="HSlider" parent="." unique_id=2032114236 instance=ExtResource("4_gjs24")]
+process_mode = 3
 layout_mode = 0
-offset_left = 544.0
-offset_top = 83.99999
-offset_right = 755.0
-offset_bottom = 251.0
+offset_left = 526.00006
+offset_top = 72.99999
+offset_right = 756.6177
+offset_bottom = 240.0
 scale = Vector2(0.8155953, 0.79999876)
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_83j8s")
 
@@ -120,16 +113,16 @@ label_settings = SubResource("LabelSettings_gjs24")
 
 [node name="Screenshot20260818At9_30_02AmRemovebgPreview" type="Sprite2D" parent="." unique_id=1336085141]
 modulate = Color(0.8959892, 0.89540946, 0.88858795, 1)
-position = Vector2(507, 152)
+position = Vector2(491, 138)
 scale = Vector2(0.17413256, 0.17080262)
 texture = ExtResource("6_gis3k")
 
 [node name="Label2" type="Label" parent="." unique_id=1481124869]
 layout_mode = 0
-offset_left = 156.00002
-offset_top = 71.0
-offset_right = 501.0
-offset_bottom = 524.0
+offset_left = 171.0
+offset_top = 77.0
+offset_right = 516.0
+offset_bottom = 530.0
 scale = Vector2(0.8155953, 0.79999876)
 text = "OBJECTIVE
 Complete each level 
@@ -152,11 +145,29 @@ scale = Vector2(0.8155953, 0.79999876)
 [node name="go_back_Button" parent="." unique_id=1868898079 instance=ExtResource("7_83j8s")]
 layout_mode = 0
 offset_left = 105.99999
-offset_top = 69.0
+offset_top = 70.0
 offset_right = 315.0
-offset_bottom = 268.0
+offset_bottom = 269.0
 scale = Vector2(0.18530563, 0.1976738)
+
+[node name="restart" type="Button" parent="." unique_id=1204792213]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 191.0
+offset_right = 1031.0
+offset_bottom = 328.55676
+scale = Vector2(0.42411056, 0.41600037)
+
+[node name="Label3" type="Label" parent="restart" unique_id=573640616]
+layout_mode = 0
+offset_left = 96.67284
+offset_top = 31.24997
+offset_right = 491.67285
+offset_bottom = 138.24997
+text = "RESTART"
+label_settings = SubResource("LabelSettings_gjs24")
 
 [connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="go_back_Button" to="." method="_on_go_back_button_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

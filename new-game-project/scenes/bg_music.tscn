@@ -15,6 +15,7 @@ grow_vertical = 2
 scale = Vector2(1, 0.91999906)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1643193221]
+process_mode = 3
 stream = ExtResource("1_f6gl3")
 autoplay = true
 bus = &"Music"

@@ -121,10 +121,10 @@ label_settings = SubResource("LabelSettings_xbefn")
 metadata/_edit_use_anchors_ = true
 
 [node name="fire_gem" parent="." unique_id=1721365225 instance=ExtResource("9_l8o8q")]
-position = Vector2(105, 513)
+position = Vector2(1114, 506)
 
 [node name="water_gem" parent="." unique_id=25455862 instance=ExtResource("10_wd8ji")]
-position = Vector2(1110, 503)
+position = Vector2(102, 511)
 
 [node name="door" type="Area2D" parent="." unique_id=130020049]
 position = Vector2(3, 0)
@@ -138,9 +138,15 @@ position = Vector2(608, 138)
 scale = Vector2(0.14462404, 0.13585433)
 texture = ExtResource("12_xbefn")
 
-[node name="BulletSpawner" type="Node2D" parent="." unique_id=383235258]
+[node name="BulletSpawner" type="Node2D" parent="." unique_id=383235258 node_paths=PackedStringArray("timer")]
+process_mode = 1
+z_index = -1
 script = ExtResource("11_1r5mr")
 bullet_scene = ExtResource("12_l8o8q")
+timer = NodePath("../Timer2")
+
+[node name="Timer2" type="Timer" parent="." unique_id=1740266847]
+autostart = true
 
 [node name="TileMap" type="Sprite2D" parent="." unique_id=1906996948]
 position = Vector2(1054, 584.99994)
@@ -288,28 +294,28 @@ position = Vector2(411.00003, 231)
 scale = Vector2(20.72, 16.920021)
 
 [node name="water_gem2" parent="." unique_id=419441353 instance=ExtResource("10_wd8ji")]
-position = Vector2(547, 362)
+position = Vector2(659, 358)
 
 [node name="fire_gem2" parent="." unique_id=165954837 instance=ExtResource("9_l8o8q")]
-position = Vector2(653, 362)
+position = Vector2(527, 360)
 
 [node name="fire_gem3" parent="." unique_id=1071154454 instance=ExtResource("9_l8o8q")]
-position = Vector2(305, 277)
+position = Vector2(881, 256)
 
 [node name="fire_gem4" parent="." unique_id=1549491900 instance=ExtResource("9_l8o8q")]
-position = Vector2(521, 157)
+position = Vector2(694, 156)
 
 [node name="fire_gem5" parent="." unique_id=944463062 instance=ExtResource("9_l8o8q")]
-position = Vector2(252, 398)
+position = Vector2(942, 390)
 
 [node name="water_gem3" parent="." unique_id=224307102 instance=ExtResource("10_wd8ji")]
-position = Vector2(941, 395)
+position = Vector2(249, 385)
 
 [node name="water_gem4" parent="." unique_id=1707421036 instance=ExtResource("10_wd8ji")]
-position = Vector2(882, 261)
+position = Vector2(307, 267)
 
 [node name="water_gem5" parent="." unique_id=2007889141 instance=ExtResource("10_wd8ji")]
-position = Vector2(690, 157)
+position = Vector2(523, 152)
 
 [node name="Control" parent="." unique_id=1248839437 instance=ExtResource("15_ue8cd")]
 process_mode = 2
@@ -351,7 +357,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Control2" parent="." unique_id=643046507 instance=ExtResource("18_aqurn")]
 visible = false
-z_index = 2
+z_index = 5
 offset_left = 43.0
 offset_top = 9.0
 offset_right = 83.0
@@ -367,6 +373,7 @@ scale = Vector2(0.47999758, 0.4799993)
 
 [connection signal="body_entered" from="door" to="." method="_on_button_body_entered"]
 [connection signal="body_exited" from="door" to="." method="_on_button_body_exited"]
+[connection signal="timeout" from="Timer2" to="BulletSpawner" method="spawn_bullet"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
