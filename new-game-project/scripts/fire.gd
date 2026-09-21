@@ -3,7 +3,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-var fire_gem_counter = 0
+var gem_counter = 0
+
 
 @export var timer: Timer
 
@@ -31,13 +32,15 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("fire_gem"):
-		fire_gem_counter += 1
+		gem_counter += 1
 		area.queue_free()
-		coin_label.text = str(fire_gem_counter) 
-	if area.is_in_group("common_damager"):
+		coin_label.text = str(gem_counter) 
+
+	if area.is_in_group("common_damager") or area.is_in_group("water_damager"):
 		await get_tree().create_timer(0.1).timeout
 		get_tree().reload_current_scene()
-		
+
+	
 func die():
 	await get_tree().create_timer(0.2).timeout
 	get_tree().reload_current_scene()

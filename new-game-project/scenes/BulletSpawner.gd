@@ -6,7 +6,6 @@ extends Node2D
 func _ready():
 	randomize()
 	spawn_bullet()
-	#while true:
 		
 
 func spawn_bullet():
@@ -24,7 +23,3 @@ func spawn_bullet():
 		bullet.direction = Vector2.LEFT
 
 	get_parent().add_child(bullet)
-
-
-func _on_timer_2_timeout() -> void:
-	pass # Replace with function body.

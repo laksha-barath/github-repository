@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cls7pm185gxg0"
+path="res://.godot/imported/Wavy - Karan Aujla (1).mp3-47ea23daa3c340c45c1749d1892abdca.mp3str"
+
+[deps]
+
+source_file="res://assets/Wavy - Karan Aujla (1).mp3"
+dest_files=["res://.godot/imported/Wavy - Karan Aujla (1).mp3-47ea23daa3c340c45c1749d1892abdca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

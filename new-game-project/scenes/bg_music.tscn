@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ba72tpgnbuoda"]
 
-[ext_resource type="AudioStream" uid="uid://cltqk2j70uaov" path="res://assets/Justin_Bieber_-_DAISIES_(mp3.pm).mp3" id="1_f6gl3"]
+[ext_resource type="AudioStream" uid="uid://w7b5nki6u8f2" path="res://assets/Tame_Impala_-_Loser_(mp3.pm).mp3" id="1_3sx0t"]
 [ext_resource type="Texture2D" uid="uid://54sjnu3qpb2v" path="res://assets/Mute Button unmuted1.png" id="2_3sx0t"]
 [ext_resource type="Texture2D" uid="uid://cg5tjr8hxwp2o" path="res://assets/Mute Button muted1.png" id="3_fgucq"]
 [ext_resource type="Script" uid="uid://dyc0ojksq4sa4" path="res://scenes/mute_button.gd" id="4_8rjbd"]
@@ -16,7 +16,7 @@ scale = Vector2(1, 0.91999906)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1643193221]
 process_mode = 3
-stream = ExtResource("1_f6gl3")
+stream = ExtResource("1_3sx0t")
 autoplay = true
 bus = &"Music"
 

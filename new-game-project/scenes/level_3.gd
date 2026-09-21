@@ -4,8 +4,13 @@ var time : int = 0
 var players_at_exit: int = 0
 var max_players: int = 2
 
+
+
 @onready var time_label: Label = $Timer/label4
 @export var timer : Timer
+
+
+
 
 
 func _ready() -> void:

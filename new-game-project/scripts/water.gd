@@ -3,9 +3,10 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-var water_gem_counter = 0
+var gem_counter = 0
 @export var timer: Timer
 @onready var coin_label = %Label
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -28,13 +29,15 @@ func _physics_process(delta: float) -> void:
 	
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("water_gem"):
-		water_gem_counter += 1
+		gem_counter += 1
 		area.queue_free()
-		coin_label.text = str(water_gem_counter)
-	if area.is_in_group("common_damager"):
+		coin_label.text = str(gem_counter)
+	if area.is_in_group("common_damager") or area.is_in_group("fire_damager"):
 		await get_tree().create_timer(0.4).timeout
 		get_tree().reload_current_scene()
-	
+
+		
+
 func die():
 	await get_tree().create_timer(0.2).timeout
 	get_tree().reload_current_scene()

@@ -348,6 +348,7 @@ offset_bottom = 217.0
 scale = Vector2(0.47999758, 0.4799993)
 
 [node name="Control2" parent="." unique_id=643046507 instance=ExtResource("30_q7j5u")]
+visible = false
 z_index = 5
 offset_left = 143.0
 offset_top = 50.0

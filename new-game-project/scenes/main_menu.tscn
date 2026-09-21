@@ -50,6 +50,9 @@ icon = ExtResource("5_tbmy8")
 flat = true
 expand_icon = true
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2122415684]
+position = Vector2(586, 343)
+
 [connection signal="pressed" from="Button" to="." method="_play"]
 [connection signal="pressed" from="Button2" to="." method="_levels"]
 [connection signal="pressed" from="Button3" to="." method="_exit"]
