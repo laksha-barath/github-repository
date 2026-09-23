@@ -1,16 +1,145 @@
 [gd_scene format=3 uid="uid://de0u4yd5o137y"]
 
-[ext_resource type="Texture2D" uid="uid://beos2tbbdnji4" path="res://assets/Screenshot 2026-05-25 at 11.41.33 PM.png" id="1_hcnff"]
+[ext_resource type="Script" uid="uid://bp7lopcaivkam" path="res://scenes/levels.gd" id="1_5ekxl"]
+[ext_resource type="Texture2D" uid="uid://4o48f4kda3ui" path="res://assets/Screenshot 2026-09-23 at 6.21.44 PM.png" id="1_hk6qi"]
+[ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="2_5ekxl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ly2og"]
+font = ExtResource("2_5ekxl")
+font_size = 45
+font_color = Color(0.6, 0.6, 0.6, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jj4e6"]
+font = ExtResource("2_5ekxl")
+font_size = 40
+font_color = Color(0.6, 0.6, 0.6, 1)
 
 [node name="levels" type="Node2D" unique_id=715746615]
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1371856620]
-position = Vector2(528, 341.00003)
-scale = Vector2(0.74289775, 0.6531792)
-enabled = false
-zoom = Vector2(1.1, 1.1)
+position = Vector2(665, 321)
+script = ExtResource("1_5ekxl")
 
 [node name="levels" type="Sprite2D" parent="." unique_id=2097863683]
-position = Vector2(582.5, 341.00003)
-scale = Vector2(0.82031244, 0.6531792)
-texture = ExtResource("1_hcnff")
+position = Vector2(571.50006, 321.5)
+scale = Vector2(0.9734588, 0.7453489)
+texture = ExtResource("1_hk6qi")
+
+[node name="level 1" type="ColorRect" parent="." unique_id=1008813638]
+offset_left = 491.0
+offset_top = 228.0
+offset_right = 666.0
+offset_bottom = 289.0
+color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
+metadata/_edit_use_anchors_ = true
+
+[node name="level_1_Button" type="Button" parent="level 1" unique_id=114426173]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 61.0
+
+[node name="level 1" type="Label" parent="level 1" unique_id=771263798]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 8.0
+offset_right = 158.0
+offset_bottom = 54.0
+text = "level 1"
+label_settings = SubResource("LabelSettings_ly2og")
+
+[node name="level 2" type="ColorRect" parent="." unique_id=1837832191]
+offset_left = 491.0
+offset_top = 307.0
+offset_right = 666.0
+offset_bottom = 368.0
+color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
+
+[node name="level_2_Button" type="Button" parent="level 2" unique_id=1754090612]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.752
+anchor_top = -4.782
+anchor_right = 3.6420002
+anchor_bottom = 5.6010003
+offset_left = 481.6
+offset_top = 291.702
+offset_right = -462.35004
+offset_bottom = -280.661
+
+[node name="level 1" type="Label" parent="level 2" unique_id=1591238935]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 10.0
+offset_right = 156.0
+offset_bottom = 56.0
+text = "level 2"
+label_settings = SubResource("LabelSettings_ly2og")
+
+[node name="level 3" type="ColorRect" parent="." unique_id=1602327355]
+offset_left = 490.0
+offset_top = 381.0
+offset_right = 665.0
+offset_bottom = 442.0
+color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
+
+[node name="level_3_Button" type="Button" parent="level 3" unique_id=497314016]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 61.0
+
+[node name="level 3" type="Label" parent="level 3" unique_id=1605928061]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 8.0
+offset_right = 158.0
+offset_bottom = 54.0
+text = "level 3"
+label_settings = SubResource("LabelSettings_ly2og")
+
+[node name="main_menu" type="ColorRect" parent="." unique_id=611447412]
+offset_left = 318.0
+offset_top = 277.0
+offset_right = 458.0
+offset_bottom = 414.0
+color = Color(0.67058825, 0.67058825, 0.67058825, 1)
+
+[node name="main_menu_Button" type="Button" parent="main_menu" unique_id=247236770]
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 138.0
+
+[node name="main menu" type="Label" parent="main_menu" unique_id=1383709377]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 22.0
+offset_right = 144.0
+offset_bottom = 106.0
+text = "Main 
+menu"
+label_settings = SubResource("LabelSettings_jj4e6")
+
+[node name="Quit" type="ColorRect" parent="." unique_id=572835348]
+offset_left = 701.0
+offset_top = 278.0
+offset_right = 841.0
+offset_bottom = 415.0
+color = Color(0.67058825, 0.67058825, 0.67058825, 1)
+
+[node name="quit_button" type="Button" parent="Quit" unique_id=1974101854]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 140.0
+offset_bottom = 137.0
+
+[node name="quit" type="Label" parent="Quit" unique_id=122231227]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 51.0
+offset_right = 159.0
+offset_bottom = 135.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_jj4e6")
+
+[connection signal="pressed" from="level 1/level_1_Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="level 2/level_2_Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="level 3/level_3_Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="main_menu/main_menu_Button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="Quit/quit_button" to="." method="_on_quit_button_pressed"]

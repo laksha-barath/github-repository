@@ -1,11 +1,21 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _on_level_1_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/game_screen.tscn")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_level_2_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/2level.tscn")
+
+
+func _on_level_3_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/level3.tscn")
+
+	
+func _on_main_menu_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	
+
+func _on_quit_button_pressed() -> void:
+	get_tree().quit()

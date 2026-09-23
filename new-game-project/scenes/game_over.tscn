@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://lbbvjxnebsga"]
 
+[ext_resource type="Script" uid="uid://dvqebvbqdquxp" path="res://scenes/game_over.gd" id="1_tbwuq"]
 [ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="1_wqhvx"]
 [ext_resource type="Texture2D" uid="uid://bhs7351mrwigs" path="res://assets/Screenshot 2026-09-21 at 8.38.13 PM.png" id="1_xeevv"]
 
@@ -19,6 +20,7 @@ offset_right = -10.0
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tbwuq")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1406289673]
 

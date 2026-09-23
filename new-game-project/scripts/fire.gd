@@ -30,6 +30,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("fire_gem"):
 		gem_counter += 1
@@ -44,6 +45,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 func die():
 	await get_tree().create_timer(0.2).timeout
 	get_tree().reload_current_scene()
+
 
 func _ready() -> void:
 	BgMusic.hide()

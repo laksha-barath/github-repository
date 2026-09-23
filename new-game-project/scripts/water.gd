@@ -34,7 +34,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		coin_label.text = str(gem_counter)
 	if area.is_in_group("common_damager") or area.is_in_group("fire_damager"):
 		await get_tree().create_timer(0.4).timeout
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
 
 		
 
