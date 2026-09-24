@@ -26,8 +26,9 @@ func _on_timer_timeout() -> void:
 	time += 1
 	time_label.text = str(time)
 
+
 func _ready() -> void:
-	BgMusic.get_child(0).play()
+	BgMusic.get_child(0).stop()
 
 func _on_button_pressed() -> void:
 	get_node("/root/Node2D/Control2").show()

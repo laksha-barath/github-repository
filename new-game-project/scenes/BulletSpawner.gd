@@ -16,7 +16,7 @@ func spawn_bullet():
 	var y = randf_range(50, 670)
 
 	if randi() % 2 == 0:
-		bullet.position = Vector2(-20, y)
+		bullet.position = Vector2(100, y)
 		bullet.direction = Vector2.RIGHT
 	else:
 		bullet.position = Vector2(1300, y)

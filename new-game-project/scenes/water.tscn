@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8w3bxueubiq6" path="res://scripts/water.gd" id="1_s3811"]
 [ext_resource type="Texture2D" uid="uid://doyuhefwasyfx" path="res://assets/water .png" id="2_p1n2c"]
+[ext_resource type="AudioStream" uid="uid://crtfjr0p572db" path="res://assets/driken5482-retro-coin-4-236671.mp3" id="3_p1n2c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ewrsg"]
 size = Vector2(10, 22)
@@ -28,5 +29,8 @@ shape = SubResource("RectangleShape2D_ewrsg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=136889038]
 position = Vector2(30, 617)
 shape = SubResource("RectangleShape2D_s3811")
+
+[node name="PickUpSound" type="AudioStreamPlayer2D" parent="." unique_id=1221285466]
+stream = ExtResource("3_p1n2c")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

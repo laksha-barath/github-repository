@@ -9,8 +9,8 @@ func _process(delta):
 func _on_area_entered(area):
 	var player = area.get_parent()
 	if player.is_in_group("players"):
-		await get_tree().create_timer(0.2).timeout
-		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
+		await get_tree().create_timer(0.1).timeout
+		get_tree().reload_current_scene()
 
 
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:

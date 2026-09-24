@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -400.0
 var gem_counter = 0
 @export var timer: Timer
 @onready var coin_label = %Label
+@onready var PickupSound: AudioStreamPlayer2D = $PickUpSound
 
 
 func _physics_process(delta: float) -> void:
@@ -30,12 +31,12 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("water_gem"):
 		gem_counter += 1
+		PickupSound.play()
 		area.queue_free()
 		coin_label.text = str(gem_counter)
 	if area.is_in_group("common_damager") or area.is_in_group("fire_damager"):
-		await get_tree().create_timer(0.4).timeout
-		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
-
+		await get_tree().create_timer(0.1).timeout
+		get_tree().reload_current_scene()
 		
 
 func die():
