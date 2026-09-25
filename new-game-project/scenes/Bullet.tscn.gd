@@ -16,5 +16,3 @@ func _on_area_entered(area):
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
 	queue_free()
 	
-#func _game_over():
-	#get_tree().change_scene_to_file("res://scenes/game_over.tscn")

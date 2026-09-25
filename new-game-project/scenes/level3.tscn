@@ -195,17 +195,17 @@ position = Vector2(645, 375)
 position = Vector2(775, 159)
 
 [node name="gem counter" type="Sprite2D" parent="." unique_id=855604362]
-position = Vector2(100, 76)
-scale = Vector2(0.1313291, 0.13132912)
+position = Vector2(111.057755, 80.25)
+scale = Vector2(0.16230322, 0.14477848)
 texture = ExtResource("12_qewby")
 
 [node name="Label2" type="Label" parent="gem counter" unique_id=836644770]
 unique_name_in_owner = true
 z_index = 1
-offset_left = -114.216896
-offset_top = -274.12045
-offset_right = 51.783104
-offset_bottom = -1.1204529
+offset_left = -98.93674
+offset_top = -271.10385
+offset_right = 67.06326
+offset_bottom = 1.8961487
 text = " 0"
 label_settings = SubResource("LabelSettings_bradm")
 metadata/_edit_use_anchors_ = true
@@ -213,10 +213,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Label" type="Label" parent="gem counter" unique_id=537094364]
 unique_name_in_owner = true
 z_index = 1
-offset_left = -114.21689
-offset_top = -15.228912
-offset_right = 51.78311
-offset_bottom = 257.7711
+offset_left = -98.93678
+offset_top = -22.448088
+offset_right = 67.06322
+offset_bottom = 250.55191
 text = " 0"
 label_settings = SubResource("LabelSettings_got4s")
 metadata/_edit_use_anchors_ = true
