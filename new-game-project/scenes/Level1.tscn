@@ -1,38 +1,38 @@
 [gd_scene format=4 uid="uid://rg6o1y611bkc"]
 
-[ext_resource type="Script" uid="uid://bctoobk0wbe83" path="res://scripts/game_screen.gd" id="1_1urxi"]
-[ext_resource type="Texture2D" uid="uid://dqt2bsva8kqaq" path="res://assets/bg colour.png" id="1_8mhku"]
-[ext_resource type="Texture2D" uid="uid://bhhkwb4w4dlj2" path="res://assets/tilemap (1).png" id="2_85ytm"]
-[ext_resource type="PackedScene" uid="uid://2ib8jjwsdiaf" path="res://scenes/fire.tscn" id="3_dv2sx"]
-[ext_resource type="PackedScene" uid="uid://darmbns6e3i5y" path="res://scenes/water.tscn" id="4_rxmqw"]
-[ext_resource type="PackedScene" uid="uid://bf4d4x86lgxyo" path="res://scenes/water_gem.tscn" id="5_rxmqw"]
-[ext_resource type="PackedScene" uid="uid://cpsebg2lxc8ax" path="res://scenes/coin.tscn" id="6_1urxi"]
-[ext_resource type="Script" uid="uid://c42agy2tkwfc2" path="res://scripts/water_gem.gd" id="7_8imdr"]
-[ext_resource type="PackedScene" uid="uid://cs45hxtwfg7jr" path="res://scenes/fire_gem.tscn" id="7_dthvl"]
-[ext_resource type="Texture2D" uid="uid://cqicmoctrsetk" path="res://assets/Screenshot 2026-06-16 at 9.26.21 AM.png" id="8_r01d7"]
-[ext_resource type="Texture2D" uid="uid://b13ire7cedjed" path="res://assets/Screenshot 2026-06-16 at 9.57.19 AM.png" id="9_mjl5p"]
-[ext_resource type="Texture2D" uid="uid://crgeifgesr51u" path="res://assets/Screenshot 2026-06-16 at 9.58.27 AM.png" id="10_2yu03"]
-[ext_resource type="Texture2D" uid="uid://b7cimgrwrtuhx" path="res://assets/Screenshot 2026-06-16 at 10.01.23 AM.png" id="11_5vo8s"]
-[ext_resource type="Texture2D" uid="uid://bf1r8k166v8xe" path="res://assets/Screenshot 2026-06-16 at 10.39.28 AM.png" id="12_vqtp5"]
-[ext_resource type="Texture2D" uid="uid://cqntkcdk4tbhb" path="res://assets/Screenshot 2026-06-16 at 10.49.55 AM.png" id="13_8tvxp"]
-[ext_resource type="Texture2D" uid="uid://m778j1ax1va3" path="res://assets/Screenshot 2026-06-16 at 10.53.32 AM.png" id="14_3a7ej"]
-[ext_resource type="Texture2D" uid="uid://caqvkjvpndvkd" path="res://assets/Screenshot 2026-06-16 at 10.57.13 AM.png" id="15_bd51b"]
-[ext_resource type="Texture2D" uid="uid://bf18tkq1hyu0u" path="res://assets/Screenshot 2026-06-16 at 10.58.40 AM.png" id="16_oknyi"]
-[ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="18_oknyi"]
-[ext_resource type="PackedScene" uid="uid://bt3l54h43hspd" path="res://scenes/water_damager.tscn" id="20_h0j4g"]
-[ext_resource type="PackedScene" uid="uid://ck3e07hwb4mkd" path="res://scenes/fire_damager.tscn" id="21_87fqc"]
-[ext_resource type="PackedScene" uid="uid://cx7tkdlhts1wk" path="res://scenes/moving_playform.tscn" id="23_51grn"]
-[ext_resource type="Texture2D" uid="uid://cjbi1r06mkkcj" path="res://assets/Screenshot 2026-06-24 at 12.42.57 PM.png" id="24_f2213"]
-[ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/pause_menu.tscn" id="26_51grn"]
-[ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/pause_button.tscn" id="26_yc1wb"]
-[ext_resource type="Texture2D" uid="uid://b8l8ics2lcrj8" path="res://assets/tile map .png" id="27_yc1wb"]
-[ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="28_yc1wb"]
-[ext_resource type="PackedScene" uid="uid://106ihq35tf48" path="res://scenes/common_damager.tscn" id="29_5o8nl"]
-[ext_resource type="PackedScene" uid="uid://b8nr63q64me5y" path="res://scenes/settings_button.tscn" id="29_q7j5u"]
-[ext_resource type="PackedScene" uid="uid://c8l80emx6xhqg" path="res://scenes/settings.tscn" id="30_q7j5u"]
+[ext_resource type="Script" uid="uid://bctoobk0wbe83" path="res://scripts/game_screen.gd" id="1_qwon6"]
+[ext_resource type="Texture2D" uid="uid://dqt2bsva8kqaq" path="res://assets/bg colour.png" id="2_7k372"]
+[ext_resource type="Texture2D" uid="uid://bhhkwb4w4dlj2" path="res://assets/tilemap (1).png" id="3_ak7rx"]
+[ext_resource type="Texture2D" uid="uid://b8l8ics2lcrj8" path="res://assets/tile map .png" id="4_vgt1y"]
+[ext_resource type="PackedScene" uid="uid://darmbns6e3i5y" path="res://scenes/Water.tscn" id="5_jrm5b"]
+[ext_resource type="PackedScene" uid="uid://2ib8jjwsdiaf" path="res://scenes/Fire.tscn" id="6_rfxdd"]
+[ext_resource type="PackedScene" uid="uid://cs45hxtwfg7jr" path="res://scenes/FireGem.tscn" id="7_kn0xh"]
+[ext_resource type="PackedScene" uid="uid://bf4d4x86lgxyo" path="res://scenes/WaterGem.tscn" id="8_tjrcc"]
+[ext_resource type="PackedScene" uid="uid://cpsebg2lxc8ax" path="res://scenes/Coin.tscn" id="9_ncr2o"]
+[ext_resource type="Script" uid="uid://c42agy2tkwfc2" path="res://scripts/water_gem.gd" id="10_t86jx"]
+[ext_resource type="PackedScene" uid="uid://bt3l54h43hspd" path="res://scenes/WaterDamager.tscn" id="11_uffv2"]
+[ext_resource type="PackedScene" uid="uid://ck3e07hwb4mkd" path="res://scenes/FireDamager.tscn" id="12_lcs61"]
+[ext_resource type="PackedScene" uid="uid://cx7tkdlhts1wk" path="res://scenes/MovingPlayform.tscn" id="13_v2rjx"]
+[ext_resource type="Texture2D" uid="uid://cjbi1r06mkkcj" path="res://assets/Screenshot 2026-06-24 at 12.42.57 PM.png" id="14_s2ivy"]
+[ext_resource type="PackedScene" uid="uid://c5o8yxhwb2ut" path="res://scenes/PauseMenu.tscn" id="15_ex37g"]
+[ext_resource type="PackedScene" uid="uid://b58puudddvb87" path="res://scenes/PauseButton.tscn" id="16_p72f1"]
+[ext_resource type="Texture2D" uid="uid://ttah8kqmfile" path="res://assets/Screenshot 2026-08-01 at 11.45.24 AM.png" id="17_hv2un"]
+[ext_resource type="Texture2D" uid="uid://cqicmoctrsetk" path="res://assets/Screenshot 2026-06-16 at 9.26.21 AM.png" id="18_gasb8"]
+[ext_resource type="Texture2D" uid="uid://b13ire7cedjed" path="res://assets/Screenshot 2026-06-16 at 9.57.19 AM.png" id="19_7vka5"]
+[ext_resource type="Texture2D" uid="uid://crgeifgesr51u" path="res://assets/Screenshot 2026-06-16 at 9.58.27 AM.png" id="20_m3bc7"]
+[ext_resource type="Texture2D" uid="uid://b7cimgrwrtuhx" path="res://assets/Screenshot 2026-06-16 at 10.01.23 AM.png" id="21_1ymaa"]
+[ext_resource type="Texture2D" uid="uid://bf1r8k166v8xe" path="res://assets/Screenshot 2026-06-16 at 10.39.28 AM.png" id="22_i47oo"]
+[ext_resource type="Texture2D" uid="uid://cqntkcdk4tbhb" path="res://assets/Screenshot 2026-06-16 at 10.49.55 AM.png" id="23_lcaix"]
+[ext_resource type="Texture2D" uid="uid://m778j1ax1va3" path="res://assets/Screenshot 2026-06-16 at 10.53.32 AM.png" id="24_bkf47"]
+[ext_resource type="Texture2D" uid="uid://caqvkjvpndvkd" path="res://assets/Screenshot 2026-06-16 at 10.57.13 AM.png" id="25_d0lxk"]
+[ext_resource type="Texture2D" uid="uid://bf18tkq1hyu0u" path="res://assets/Screenshot 2026-06-16 at 10.58.40 AM.png" id="26_01iek"]
+[ext_resource type="Texture2D" uid="uid://urxf8j1kfb5p" path="res://assets/Screenshot 2026-06-16 at 11.08.03 AM.png" id="27_spm5l"]
+[ext_resource type="PackedScene" uid="uid://106ihq35tf48" path="res://scenes/CommonDamager.tscn" id="28_mlhc1"]
+[ext_resource type="PackedScene" uid="uid://b8nr63q64me5y" path="res://scenes/SettingsButton.tscn" id="29_0ki1v"]
+[ext_resource type="PackedScene" uid="uid://c8l80emx6xhqg" path="res://scenes/Settings.tscn" id="30_6jrpy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4dvvg"]
-texture = ExtResource("1_8mhku")
+texture = ExtResource("2_7k372")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 
@@ -40,7 +40,7 @@ texture_region_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_4dvvg")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uriw"]
-texture = ExtResource("2_85ytm")
+texture = ExtResource("3_ak7rx")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -52,7 +52,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_3uriw")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q7j5u"]
-texture = ExtResource("27_yc1wb")
+texture = ExtResource("4_vgt1y")
 texture_region_size = Vector2i(15, 11)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5, -5.5, 7.5, -5.5, 7.5, 5.5, -7.5, 5.5)
@@ -82,16 +82,16 @@ size = Vector2(99, 21.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8e4ax"]
 size = Vector2(82.5, 19.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwon6"]
+size = Vector2(544.02686, 84.38641)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2213"]
 size = Vector2(88.5, 85.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7j5u"]
-size = Vector2(386.22998, 115.27112)
-
-[node name="Node2D" type="Node2D" unique_id=499038079 node_paths=PackedStringArray("time_label", "timer")]
+[node name="Level1" type="Node2D" unique_id=499038079 node_paths=PackedStringArray("time_label", "timer")]
 position = Vector2(2, 9)
-script = ExtResource("1_1urxi")
-time_label = NodePath("Timer/label3")
+script = ExtResource("1_qwon6")
+time_label = NodePath("Timer/TimerLabel")
 timer = NodePath("Timer")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=158658408]
@@ -112,32 +112,32 @@ tile_set = SubResource("TileSet_1vcyb")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=810441892]
 position = Vector2(577, 325)
 
-[node name="water" parent="." unique_id=1336688208 instance=ExtResource("4_rxmqw")]
+[node name="WaterPlayer" parent="." unique_id=1336688208 instance=ExtResource("5_jrm5b")]
 z_index = 1
 position = Vector2(123, -27)
 
-[node name="fire" parent="." unique_id=287068724 instance=ExtResource("3_dv2sx")]
+[node name="FirePlayer" parent="." unique_id=287068724 instance=ExtResource("6_rfxdd")]
 z_index = 1
 position = Vector2(967, 54)
 
-[node name="Label" type="Label" parent="." unique_id=704904747]
+[node name="WaterGemLabel" type="Label" parent="." unique_id=704904747]
 unique_name_in_owner = true
 z_index = 1
-offset_left = 82.0
-offset_top = 81.0
-offset_right = 145.0
-offset_bottom = 132.0
+offset_left = 83.0
+offset_top = 76.0
+offset_right = 146.0
+offset_bottom = 127.0
 text = " 0"
 label_settings = SubResource("LabelSettings_1urxi")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="." unique_id=542303375]
+[node name="FireGemLabel" type="Label" parent="." unique_id=542303375]
 unique_name_in_owner = true
 z_index = 1
 offset_left = 81.0
-offset_top = 37.0
+offset_top = 36.0
 offset_right = 136.0
-offset_bottom = 90.0
+offset_bottom = 89.0
 text = " 0"
 label_settings = SubResource("LabelSettings_dthvl")
 metadata/_edit_use_anchors_ = true
@@ -145,7 +145,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Timer" type="Timer" parent="." unique_id=660005873]
 autostart = true
 
-[node name="label3" type="Label" parent="Timer" unique_id=262630917]
+[node name="TimerLabel" type="Label" parent="Timer" unique_id=262630917]
 z_index = 1
 offset_left = 1053.0
 offset_top = 84.0
@@ -154,70 +154,206 @@ offset_bottom = 154.0
 text = "0s"
 label_settings = SubResource("LabelSettings_4u5i3")
 
-[node name="fire_gem" parent="." unique_id=1721365225 instance=ExtResource("7_dthvl")]
-position = Vector2(849, 552)
-
-[node name="fire_gem2" parent="." unique_id=960222727 instance=ExtResource("7_dthvl")]
-position = Vector2(507, 151)
-
-[node name="fire_gem3" parent="." unique_id=988215935 instance=ExtResource("7_dthvl")]
-position = Vector2(550, 508)
-
-[node name="fire_gem4" parent="." unique_id=2023532950 instance=ExtResource("7_dthvl")]
-position = Vector2(264, 417)
-
-[node name="fire_gem5" parent="." unique_id=1580381887 instance=ExtResource("7_dthvl")]
-position = Vector2(186, 151)
-
-[node name="water_gem" parent="." unique_id=1568134143 instance=ExtResource("5_rxmqw")]
-position = Vector2(980, 384)
-
-[node name="water_gem2" parent="." unique_id=345729979 instance=ExtResource("5_rxmqw")]
-position = Vector2(720, 154)
-
-[node name="water_gem3" parent="." unique_id=656427111 instance=ExtResource("5_rxmqw")]
-position = Vector2(644, 508)
-
-[node name="water_gem4" parent="." unique_id=519167770 instance=ExtResource("5_rxmqw")]
-position = Vector2(1040, 156)
-
-[node name="water_gem5" parent="." unique_id=25455862 instance=ExtResource("6_1urxi")]
-position = Vector2(340, 560)
-script = ExtResource("7_8imdr")
-
-[node name="water hazard" parent="." unique_id=1572156500 instance=ExtResource("20_h0j4g")]
+[node name="WaterHazard" parent="." unique_id=1572156500 instance=ExtResource("11_uffv2")]
 position = Vector2(666, 585)
 scale = Vector2(1.2, 1.2454191)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="water hazard" unique_id=830643197]
+[node name="WaterHazardCollisionShape2D2" type="CollisionShape2D" parent="WaterHazard" unique_id=830643197]
 position = Vector2(150, 48.17657)
 shape = SubResource("RectangleShape2D_8imdr")
 
-[node name="fire hazard" parent="." unique_id=1553138615 groups=["fire_damager"] instance=ExtResource("21_87fqc")]
+[node name="FireHazard" parent="." unique_id=1553138615 groups=["fire_damager"] instance=ExtResource("12_lcs61")]
 position = Vector2(165.99998, 581)
 scale = Vector2(1.2133591, 1.1715809)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="fire hazard" unique_id=1118083066]
+[node name="FireHazardCollisionShape2D2" type="CollisionShape2D" parent="FireHazard" unique_id=1118083066]
 position = Vector2(140.10692, 56.33414)
 shape = SubResource("RectangleShape2D_8e4ax")
 
-[node name="AnimatableBody2D" parent="." unique_id=2123034417 instance=ExtResource("23_51grn")]
+[node name="CommonDamager" parent="." unique_id=158528877 groups=["common_damager"] instance=ExtResource("28_mlhc1")]
+visible = false
+position = Vector2(553.00006, 544)
+scale = Vector2(0.23889303, 0.28611714)
+
+[node name="CommonDamagerCollisionShape2D2" type="CollisionShape2D" parent="CommonDamager" unique_id=196028733]
+position = Vector2(179.99683, 111.344604)
+scale = Vector2(0.7164993, 1.4199913)
+shape = SubResource("RectangleShape2D_qwon6")
+
+[node name="MovingTile" parent="." unique_id=2123034417 instance=ExtResource("13_v2rjx")]
 position = Vector2(68, 414)
 duration = 3.0
 
-[node name="Button" type="Area2D" parent="." unique_id=161385926]
+[node name="DoorButton" type="Area2D" parent="." unique_id=161385926]
 position = Vector2(3, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Button" unique_id=2127875371]
+[node name="DoorCollisionShape2D" type="CollisionShape2D" parent="DoorButton" unique_id=2127875371]
 position = Vector2(599.75, 128.25)
 shape = SubResource("RectangleShape2D_f2213")
 
-[node name="door" type="Sprite2D" parent="Button" unique_id=303756424]
+[node name="DoorButtonSprite" type="Sprite2D" parent="DoorButton" unique_id=303756424]
 position = Vector2(607, 124.99999)
 scale = Vector2(0.14462404, 0.13585433)
-texture = ExtResource("24_f2213")
+texture = ExtResource("14_s2ivy")
 
-[node name="Control" parent="." unique_id=1248839437 instance=ExtResource("26_51grn")]
+[node name="TimerSprite" type="Sprite2D" parent="." unique_id=232968116]
+position = Vector2(1042.9999, 98)
+scale = Vector2(0.12981744, 0.11640211)
+texture = ExtResource("17_hv2un")
+
+[node name="GemCounterSprite" type="Sprite2D" parent="TimerSprite" unique_id=895411316]
+position = Vector2(-7248.6396, -128.86353)
+scale = Vector2(1.4584405, 1.5989013)
+texture = ExtResource("18_gasb8")
+
+[node name="Level1Sprite" type="Sprite2D" parent="TimerSprite" unique_id=679603618]
+position = Vector2(-3404.7803, -601.3636)
+scale = Vector2(1.8067328, 2.0149584)
+texture = ExtResource("19_7vka5")
+
+[node name="FireGem" parent="TimerSprite" unique_id=1721365225 instance=ExtResource("7_kn0xh")]
+position = Vector2(-1494.4053, 3900.2727)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="FireGem2" parent="TimerSprite" unique_id=960222727 instance=ExtResource("7_kn0xh")]
+position = Vector2(-4128.874, 455.31818)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="FireGem3" parent="TimerSprite" unique_id=988215935 instance=ExtResource("7_kn0xh")]
+position = Vector2(-3797.6396, 3522.2727)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="FireGem4" parent="TimerSprite" unique_id=2023532950 instance=ExtResource("7_kn0xh")]
+position = Vector2(-6000.7334, 2740.5)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="FireGem5" parent="TimerSprite" unique_id=1580381887 instance=ExtResource("7_kn0xh")]
+position = Vector2(-6601.577, 455.31818)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="FireGem6" parent="TimerSprite" unique_id=1568134143 instance=ExtResource("8_tjrcc")]
+position = Vector2(-485.2959, 2457)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="WaterGem" parent="TimerSprite" unique_id=345729979 instance=ExtResource("8_tjrcc")]
+position = Vector2(-2488.1084, 481.09088)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="WaterGem2" parent="TimerSprite" unique_id=656427111 instance=ExtResource("8_tjrcc")]
+position = Vector2(-3073.546, 3522.2727)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="WaterGem3" parent="TimerSprite" unique_id=519167770 instance=ExtResource("8_tjrcc")]
+position = Vector2(-23.108398, 498.27277)
+scale = Vector2(7.703125, 8.590909)
+
+[node name="WaterGem4" parent="TimerSprite" unique_id=25455862 instance=ExtResource("9_ncr2o")]
+position = Vector2(-5415.296, 3968.9998)
+scale = Vector2(7.703125, 8.590909)
+script = ExtResource("10_t86jx")
+
+[node name="Boder" type="Sprite2D" parent="TimerSprite" unique_id=547617271]
+position = Vector2(-7895.702, 214.77277)
+scale = Vector2(2.7257211, 3.03986)
+texture = ExtResource("20_m3bc7")
+
+[node name="Boder2" type="Sprite2D" parent="TimerSprite" unique_id=803088692]
+position = Vector2(700.98535, 42.95465)
+scale = Vector2(2.6664622, 2.4166381)
+texture = ExtResource("20_m3bc7")
+
+[node name="Boder3" type="Sprite2D" parent="TimerSprite" unique_id=695725991]
+position = Vector2(-5946.8115, -721.63635)
+scale = Vector2(3.505283, 2.6667633)
+texture = ExtResource("21_1ymaa")
+
+[node name="Boder4" type="Sprite2D" parent="TimerSprite" unique_id=640119204]
+position = Vector2(-1039.771, -718.41473)
+scale = Vector2(3.1720445, 2.9195857)
+texture = ExtResource("21_1ymaa")
+
+[node name="Boder5" type="Sprite2D" parent="TimerSprite" unique_id=1859273732]
+position = Vector2(-7903.4053, 3032.5908)
+scale = Vector2(5.4650545, 5.0346317)
+texture = ExtResource("22_i47oo")
+
+[node name="Boder6" type="Sprite2D" parent="TimerSprite" unique_id=1528157369]
+position = Vector2(-7448.921, 4140.8184)
+scale = Vector2(3.9411333, 4.963556)
+texture = ExtResource("23_lcaix")
+
+[node name="Boder7" type="Sprite2D" parent="TimerSprite" unique_id=1760464745]
+position = Vector2(-596.9917, 4596.6733)
+scale = Vector2(2.8118777, 6.095753)
+texture = ExtResource("24_bkf47")
+
+[node name="Boder8" type="Sprite2D" parent="TimerSprite" unique_id=474159944]
+position = Vector2(-6443.663, 4596.1367)
+scale = Vector2(4.1823716, 5.0534782)
+texture = ExtResource("24_bkf47")
+
+[node name="Boder9" type="Sprite2D" parent="TimerSprite" unique_id=685964765]
+position = Vector2(716.3916, 2860.773)
+scale = Vector2(5.6122766, 7.0122695)
+texture = ExtResource("25_d0lxk")
+
+[node name="Boder10" type="Sprite2D" parent="TimerSprite" unique_id=466701899]
+position = Vector2(197.39355, 4029.1365)
+scale = Vector2(5.2958994, 6.384071)
+texture = ExtResource("26_01iek")
+
+[node name="Platform" type="Sprite2D" parent="TimerSprite" unique_id=1260367828]
+position = Vector2(-2611.3584, 766.73883)
+scale = Vector2(6.2144847, 5.6851654)
+texture = ExtResource("24_bkf47")
+
+[node name="Platform2" type="Sprite2D" parent="TimerSprite" unique_id=848423511]
+position = Vector2(-2110.6548, 927.8182)
+scale = Vector2(6.4566836, 3.2847602)
+texture = ExtResource("24_bkf47")
+
+[node name="Platform3" type="Sprite2D" parent="TimerSprite" unique_id=1329329184]
+position = Vector2(-4521.7334, 936.4091)
+scale = Vector2(5.357925, 3.537436)
+texture = ExtResource("24_bkf47")
+
+[node name="Platform4" type="Sprite2D" parent="TimerSprite" unique_id=1293655841]
+position = Vector2(-1016.8115, 766.7387)
+scale = Vector2(3.6152718, 5.6851606)
+texture = ExtResource("24_bkf47")
+
+[node name="Platform5" type="Sprite2D" parent="TimerSprite" unique_id=1377580359]
+position = Vector2(-4317.6006, 768.8864)
+scale = Vector2(4.276889, 5.8114986)
+texture = ExtResource("24_bkf47")
+
+[node name="Platform6" type="Sprite2D" parent="TimerSprite" unique_id=186986485]
+position = Vector2(-5654.093, 768.8864)
+scale = Vector2(4.016968, 5.8114986)
+texture = ExtResource("24_bkf47")
+
+[node name="PlantSprite" type="Sprite2D" parent="TimerSprite" unique_id=588285974]
+position = Vector2(-3458.7021, 1847.0454)
+scale = Vector2(7.703125, 8.590908)
+texture = ExtResource("27_spm5l")
+
+[node name="SettingMenuControl" parent="." unique_id=643046507 instance=ExtResource("30_6jrpy")]
+visible = false
+z_index = 5
+offset_left = 143.00006
+offset_top = 50.0
+offset_right = 183.00006
+offset_bottom = 90.0
+scale = Vector2(1.1128246, 1.0454482)
+
+[node name="SettingMenuButton" parent="." unique_id=829396674 instance=ExtResource("29_0ki1v")]
+offset_left = 1067.0
+offset_top = 130.0
+offset_right = 1157.0
+offset_bottom = 217.0
+scale = Vector2(0.47999758, 0.4799993)
+
+[node name="PauseMenuControl" parent="." unique_id=1248839437 instance=ExtResource("15_ex37g")]
 process_mode = 3
 visible = false
 z_index = 2
@@ -227,137 +363,11 @@ offset_right = 238.00002
 offset_bottom = -75.7321
 scale = Vector2(0.36807084, 0.3107658)
 
-[node name="pause_button" parent="." unique_id=1401001530 instance=ExtResource("26_yc1wb")]
+[node name="PauseMenuButton" parent="." unique_id=1401001530 instance=ExtResource("16_p72f1")]
 offset_right = 1107.0
 
-[node name="timer sprite" type="Sprite2D" parent="." unique_id=232968116]
-position = Vector2(1042.9999, 98)
-scale = Vector2(0.12981744, 0.11640211)
-texture = ExtResource("28_yc1wb")
-
-[node name="gem counter sprite" type="Sprite2D" parent="timer sprite" unique_id=895411316]
-position = Vector2(-7248.6396, -128.86353)
-scale = Vector2(1.4584405, 1.5989013)
-texture = ExtResource("8_r01d7")
-
-[node name="level 1 sprite" type="Sprite2D" parent="timer sprite" unique_id=679603618]
-position = Vector2(-3404.7803, -601.3636)
-scale = Vector2(1.8067328, 2.0149584)
-texture = ExtResource("9_mjl5p")
-
-[node name="boder 1" type="Sprite2D" parent="timer sprite" unique_id=547617271]
-position = Vector2(-7895.702, 214.77277)
-scale = Vector2(2.7257211, 3.03986)
-texture = ExtResource("10_2yu03")
-
-[node name="boder 2" type="Sprite2D" parent="timer sprite" unique_id=803088692]
-position = Vector2(700.98535, 42.95465)
-scale = Vector2(2.6664622, 2.4166381)
-texture = ExtResource("10_2yu03")
-
-[node name="boder 3" type="Sprite2D" parent="timer sprite" unique_id=695725991]
-position = Vector2(-5946.8115, -721.63635)
-scale = Vector2(3.505283, 2.6667633)
-texture = ExtResource("11_5vo8s")
-
-[node name="boder 4" type="Sprite2D" parent="timer sprite" unique_id=640119204]
-position = Vector2(-1039.771, -718.41473)
-scale = Vector2(3.1720445, 2.9195857)
-texture = ExtResource("11_5vo8s")
-
-[node name="boder 5" type="Sprite2D" parent="timer sprite" unique_id=1859273732]
-position = Vector2(-7903.4053, 3032.5908)
-scale = Vector2(5.4650545, 5.0346317)
-texture = ExtResource("12_vqtp5")
-
-[node name="boder 6" type="Sprite2D" parent="timer sprite" unique_id=1528157369]
-position = Vector2(-7448.921, 4140.8184)
-scale = Vector2(3.9411333, 4.963556)
-texture = ExtResource("13_8tvxp")
-
-[node name="boder 8" type="Sprite2D" parent="timer sprite" unique_id=1760464745]
-position = Vector2(-596.9917, 4596.6733)
-scale = Vector2(2.8118777, 6.095753)
-texture = ExtResource("14_3a7ej")
-
-[node name="boder 7" type="Sprite2D" parent="timer sprite" unique_id=474159944]
-position = Vector2(-6443.663, 4596.1367)
-scale = Vector2(4.1823716, 5.0534782)
-texture = ExtResource("14_3a7ej")
-
-[node name="boder 9" type="Sprite2D" parent="timer sprite" unique_id=685964765]
-position = Vector2(716.3916, 2860.773)
-scale = Vector2(5.6122766, 7.0122695)
-texture = ExtResource("15_bd51b")
-
-[node name="boder 10" type="Sprite2D" parent="timer sprite" unique_id=466701899]
-position = Vector2(197.39355, 4029.1365)
-scale = Vector2(5.2958994, 6.384071)
-texture = ExtResource("16_oknyi")
-
-[node name="platform 1" type="Sprite2D" parent="timer sprite" unique_id=1260367828]
-position = Vector2(-2611.3584, 766.73883)
-scale = Vector2(6.2144847, 5.6851654)
-texture = ExtResource("14_3a7ej")
-
-[node name="platform 2" type="Sprite2D" parent="timer sprite" unique_id=848423511]
-position = Vector2(-2110.6548, 927.8182)
-scale = Vector2(6.4566836, 3.2847602)
-texture = ExtResource("14_3a7ej")
-
-[node name="platform 3" type="Sprite2D" parent="timer sprite" unique_id=1329329184]
-position = Vector2(-4521.7334, 936.4091)
-scale = Vector2(5.357925, 3.537436)
-texture = ExtResource("14_3a7ej")
-
-[node name="platform 4" type="Sprite2D" parent="timer sprite" unique_id=1293655841]
-position = Vector2(-1016.8115, 766.7387)
-scale = Vector2(3.6152718, 5.6851606)
-texture = ExtResource("14_3a7ej")
-
-[node name="platform 5" type="Sprite2D" parent="timer sprite" unique_id=1377580359]
-position = Vector2(-4317.6006, 768.8864)
-scale = Vector2(4.276889, 5.8114986)
-texture = ExtResource("14_3a7ej")
-
-[node name="platform 6" type="Sprite2D" parent="timer sprite" unique_id=186986485]
-position = Vector2(-5654.093, 768.8864)
-scale = Vector2(4.016968, 5.8114986)
-texture = ExtResource("14_3a7ej")
-
-[node name="plant sprite" type="Sprite2D" parent="timer sprite" unique_id=588285974]
-position = Vector2(-3458.7021, 1847.0454)
-scale = Vector2(7.703125, 8.590908)
-texture = ExtResource("18_oknyi")
-
-[node name="common_damager" parent="." unique_id=158528877 instance=ExtResource("29_5o8nl")]
-visible = false
-position = Vector2(556.00006, 537.99994)
-scale = Vector2(0.2578209, 0.2515809)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="common_damager" unique_id=347547084]
-position = Vector2(183.11499, 109.30859)
-scale = Vector2(1, 1.0000002)
-shape = SubResource("RectangleShape2D_q7j5u")
-
-[node name="Button2" parent="." unique_id=829396674 instance=ExtResource("29_q7j5u")]
-offset_left = 1067.0
-offset_top = 130.0
-offset_right = 1157.0
-offset_bottom = 217.0
-scale = Vector2(0.47999758, 0.4799993)
-
-[node name="Control2" parent="." unique_id=643046507 instance=ExtResource("30_q7j5u")]
-visible = false
-z_index = 5
-offset_left = 143.0
-offset_top = 50.0
-offset_right = 183.0
-offset_bottom = 90.0
-scale = Vector2(1.1128246, 1.0454482)
-
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="body_entered" from="Button" to="." method="_door_entered"]
-[connection signal="body_exited" from="Button" to="." method="_door_exited"]
-[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="body_entered" from="DoorButton" to="." method="_door_entered"]
+[connection signal="body_exited" from="DoorButton" to="." method="_door_exited"]
+[connection signal="pressed" from="SettingMenuButton" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="PauseMenuButton" to="." method="_on_pause_button_pressed"]

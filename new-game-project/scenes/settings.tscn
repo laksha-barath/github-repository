@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cgieexg25v27d" path="res://scenes/h_slider.tscn" id="4_gjs24"]
 [ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="5_am25x"]
 [ext_resource type="Texture2D" uid="uid://bciwytwba7tse" path="res://assets/Screenshot_2026-08-18_at_9.30.02_AM-removebg-preview.png" id="6_gis3k"]
-[ext_resource type="PackedScene" uid="uid://cuq0oflqcu1gw" path="res://scenes/go_back_button.tscn" id="7_83j8s"]
+[ext_resource type="PackedScene" uid="uid://cuq0oflqcu1gw" path="res://scenes/GoBackButton.tscn" id="7_83j8s"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ppmf"]
 font = ExtResource("3_83j8s")
@@ -31,7 +31,7 @@ font = ExtResource("3_83j8s")
 font_size = 30
 font_color = Color(0.7602973, 0.76029724, 0.7602968, 1)
 
-[node name="Control2" type="Control" unique_id=643046507]
+[node name="SettingMenuControl" type="Control" unique_id=643046507]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 0
@@ -41,16 +41,11 @@ offset_right = 62.0
 offset_bottom = 39.0
 script = ExtResource("1_es4n0")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=714279408]
-layout_mode = 0
-offset_left = 419.0
-offset_top = 71.0
-offset_right = 423.0
-offset_bottom = 456.0
+[node name="Camera2D" type="Camera2D" parent="." unique_id=496217561]
+position = Vector2(534, 309)
 scale = Vector2(0.8155953, 0.79999876)
-color = Color(0.59717613, 0.59717613, 0.5971761, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=492457373]
+[node name="SettingsBackGroundSprite" type="Sprite2D" parent="." unique_id=492457373]
 position = Vector2(590, 373.00003)
 scale = Vector2(2.7843194, 2.0170135)
 texture = ExtResource("2_gis3k")
@@ -75,7 +70,13 @@ offset_bottom = 240.0
 scale = Vector2(0.8155953, 0.79999876)
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_83j8s")
 
-[node name="levels" type="Button" parent="." unique_id=34870967]
+[node name="Screenshot20260818At9_30_02AmRemovebgPreview" type="Sprite2D" parent="." unique_id=1336085141]
+modulate = Color(0.8959892, 0.89540946, 0.88858795, 1)
+position = Vector2(491, 138)
+scale = Vector2(0.17413256, 0.17080262)
+texture = ExtResource("6_gis3k")
+
+[node name="Levels" type="Button" parent="." unique_id=34870967]
 layout_mode = 0
 offset_left = 477.0
 offset_top = 274.0
@@ -84,7 +85,7 @@ offset_bottom = 411.55676
 scale = Vector2(0.42411056, 0.41600037)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 
-[node name="Label" type="Label" parent="levels" unique_id=2135917445]
+[node name="LevelsLabel" type="Label" parent="Levels" unique_id=2135917445]
 z_index = 1
 layout_mode = 0
 offset_left = 136.53809
@@ -94,7 +95,7 @@ offset_bottom = 174.5385
 text = "LEVELS"
 label_settings = SubResource("LabelSettings_uhhto")
 
-[node name="quit" type="Button" parent="." unique_id=812608756]
+[node name="Quit" type="Button" parent="." unique_id=812608756]
 layout_mode = 0
 offset_left = 477.0
 offset_top = 363.00006
@@ -102,7 +103,7 @@ offset_right = 1034.0
 offset_bottom = 500.55682
 scale = Vector2(0.42411056, 0.41600037)
 
-[node name="Label3" type="Label" parent="quit" unique_id=464387338]
+[node name="QuiteLabel" type="Label" parent="Quit" unique_id=464387338]
 layout_mode = 0
 offset_left = 182.69183
 offset_top = 40.3844
@@ -111,13 +112,7 @@ offset_bottom = 147.3844
 text = "QUIT"
 label_settings = SubResource("LabelSettings_gjs24")
 
-[node name="Screenshot20260818At9_30_02AmRemovebgPreview" type="Sprite2D" parent="." unique_id=1336085141]
-modulate = Color(0.8959892, 0.89540946, 0.88858795, 1)
-position = Vector2(491, 138)
-scale = Vector2(0.17413256, 0.17080262)
-texture = ExtResource("6_gis3k")
-
-[node name="Label2" type="Label" parent="." unique_id=1481124869]
+[node name="InstructionsLabel" type="Label" parent="." unique_id=1481124869]
 layout_mode = 0
 offset_left = 171.0
 offset_top = 77.0
@@ -138,11 +133,7 @@ for fire
 "
 label_settings = SubResource("LabelSettings_gis3k")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=496217561]
-position = Vector2(534, 309)
-scale = Vector2(0.8155953, 0.79999876)
-
-[node name="go_back_Button" parent="." unique_id=1868898079 instance=ExtResource("7_83j8s")]
+[node name="GoBackButton" parent="." unique_id=1868898079 instance=ExtResource("7_83j8s")]
 layout_mode = 0
 offset_left = 105.99999
 offset_top = 70.0
@@ -150,7 +141,7 @@ offset_right = 315.0
 offset_bottom = 269.0
 scale = Vector2(0.18530563, 0.1976738)
 
-[node name="restart" type="Button" parent="." unique_id=1204792213]
+[node name="Restart" type="Button" parent="." unique_id=1204792213]
 layout_mode = 0
 offset_left = 474.0
 offset_top = 191.0
@@ -158,7 +149,7 @@ offset_right = 1031.0
 offset_bottom = 328.55676
 scale = Vector2(0.42411056, 0.41600037)
 
-[node name="Label3" type="Label" parent="restart" unique_id=573640616]
+[node name="RestartLabel" type="Label" parent="Restart" unique_id=573640616]
 layout_mode = 0
 offset_left = 96.67284
 offset_top = 31.24997
@@ -167,7 +158,7 @@ offset_bottom = 138.24997
 text = "RESTART"
 label_settings = SubResource("LabelSettings_gjs24")
 
-[connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="go_back_Button" to="." method="_on_go_back_button_pressed"]
-[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="GoBackButton" to="." method="_on_go_back_button_pressed"]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

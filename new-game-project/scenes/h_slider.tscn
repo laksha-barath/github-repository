@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cgieexg25v27d"]
 
-[ext_resource type="Script" uid="uid://bihvhfhmnyf3g" path="res://bg_audio_slider.gd" id="1_8jbbo"]
+[ext_resource type="Script" uid="uid://bihvhfhmnyf3g" path="res://scripts/bg_audio_slider.gd" id="1_8jbbo"]
 
 [node name="HSlider" type="HSlider" unique_id=2032114236]
 offset_left = 58.0

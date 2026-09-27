@@ -6,13 +6,13 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_in16y"]
 radius = 9.0
 
-[node name="fire_gem" type="Area2D" unique_id=1721365225 groups=["fire_gem"]]
+[node name="FireGem" type="Area2D" unique_id=1721365225 groups=["fire_gem"]]
 script = ExtResource("1_s8oa3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1933603599]
+[node name="FireGemCollisionShape2D" type="CollisionShape2D" parent="." unique_id=1933603599]
 shape = SubResource("CircleShape2D_in16y")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1396370727]
+[node name="FireGemSprite2D" type="Sprite2D" parent="." unique_id=1396370727]
 position = Vector2(2.9802322e-08, -7.450581e-09)
 scale = Vector2(0.06759259, 0.06759259)
 texture = ExtResource("2_6ii4k")

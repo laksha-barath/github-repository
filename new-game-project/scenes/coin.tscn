@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpsebg2lxc8ax"]
 
-[ext_resource type="Script" uid="uid://by75mhymwx4aa" path="res://scenes/coin.tscn.gd" id="1_i64fm"]
+[ext_resource type="Script" uid="uid://by75mhymwx4aa" path="res://scripts/coin.tscn.gd" id="1_i64fm"]
 [ext_resource type="Texture2D" uid="uid://ds2jnsv3ucu88" path="res://assets/water_gem.png" id="2_11l1o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lat3g"]

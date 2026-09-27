@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://de0u4yd5o137y"]
 
-[ext_resource type="Script" uid="uid://bp7lopcaivkam" path="res://scenes/levels.gd" id="1_5ekxl"]
-[ext_resource type="Texture2D" uid="uid://4o48f4kda3ui" path="res://assets/Screenshot 2026-09-23 at 6.21.44 PM.png" id="1_hk6qi"]
+[ext_resource type="Script" uid="uid://bp7lopcaivkam" path="res://scripts/levels.gd" id="1_5ekxl"]
 [ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="2_5ekxl"]
+[ext_resource type="Texture2D" uid="uid://b5fr2l3b7g71p" path="res://assets/Screenshot 2026-09-27 at 11.04.57 AM.png" id="2_ly2og"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ly2og"]
 font = ExtResource("2_5ekxl")
@@ -14,16 +14,16 @@ font = ExtResource("2_5ekxl")
 font_size = 40
 font_color = Color(0.6, 0.6, 0.6, 1)
 
-[node name="levels" type="Node2D" unique_id=715746615]
+[node name="Levels" type="Node2D" unique_id=715746615]
 position = Vector2(665, 321)
 script = ExtResource("1_5ekxl")
 
-[node name="levels" type="Sprite2D" parent="." unique_id=2097863683]
-position = Vector2(571.50006, 321.5)
-scale = Vector2(0.9734588, 0.7453489)
-texture = ExtResource("1_hk6qi")
+[node name="LevelsSprite2D" type="Sprite2D" parent="." unique_id=2097863683]
+position = Vector2(570.0001, 310)
+scale = Vector2(1.0323223, 0.8419478)
+texture = ExtResource("2_ly2og")
 
-[node name="level 1" type="ColorRect" parent="." unique_id=1008813638]
+[node name="Level1" type="ColorRect" parent="." unique_id=1008813638]
 offset_left = 491.0
 offset_top = 228.0
 offset_right = 666.0
@@ -31,12 +31,13 @@ offset_bottom = 289.0
 color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
 metadata/_edit_use_anchors_ = true
 
-[node name="level_1_Button" type="Button" parent="level 1" unique_id=114426173]
+[node name="Level1Button" type="Button" parent="Level1" unique_id=114426173]
 layout_mode = 0
 offset_right = 176.0
 offset_bottom = 61.0
+metadata/_edit_use_anchors_ = true
 
-[node name="level 1" type="Label" parent="level 1" unique_id=771263798]
+[node name="Level1Label" type="Label" parent="Level1" unique_id=771263798]
 layout_mode = 0
 offset_left = 26.0
 offset_top = 8.0
@@ -44,15 +45,17 @@ offset_right = 158.0
 offset_bottom = 54.0
 text = "level 1"
 label_settings = SubResource("LabelSettings_ly2og")
+metadata/_edit_use_anchors_ = true
 
-[node name="level 2" type="ColorRect" parent="." unique_id=1837832191]
+[node name="Level2" type="ColorRect" parent="." unique_id=1837832191]
 offset_left = 491.0
 offset_top = 307.0
 offset_right = 666.0
 offset_bottom = 368.0
 color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
+metadata/_edit_use_anchors_ = true
 
-[node name="level_2_Button" type="Button" parent="level 2" unique_id=1754090612]
+[node name="Level2Button" type="Button" parent="Level2" unique_id=1754090612]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -2.752
@@ -63,8 +66,9 @@ offset_left = 481.6
 offset_top = 291.702
 offset_right = -462.35004
 offset_bottom = -280.661
+metadata/_edit_use_anchors_ = true
 
-[node name="level 1" type="Label" parent="level 2" unique_id=1591238935]
+[node name="Level2Label" type="Label" parent="Level2" unique_id=1591238935]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 10.0
@@ -72,20 +76,23 @@ offset_right = 156.0
 offset_bottom = 56.0
 text = "level 2"
 label_settings = SubResource("LabelSettings_ly2og")
+metadata/_edit_use_anchors_ = true
 
-[node name="level 3" type="ColorRect" parent="." unique_id=1602327355]
+[node name="Level3" type="ColorRect" parent="." unique_id=1602327355]
 offset_left = 490.0
 offset_top = 381.0
 offset_right = 665.0
 offset_bottom = 442.0
 color = Color(0.8560673, 0.8560673, 0.85606724, 0.5058824)
+metadata/_edit_use_anchors_ = true
 
-[node name="level_3_Button" type="Button" parent="level 3" unique_id=497314016]
+[node name="Level3Button" type="Button" parent="Level3" unique_id=497314016]
 layout_mode = 0
 offset_right = 176.0
 offset_bottom = 61.0
+metadata/_edit_use_anchors_ = true
 
-[node name="level 3" type="Label" parent="level 3" unique_id=1605928061]
+[node name="Level3Label" type="Label" parent="Level3" unique_id=1605928061]
 layout_mode = 0
 offset_left = 26.0
 offset_top = 8.0
@@ -93,20 +100,23 @@ offset_right = 158.0
 offset_bottom = 54.0
 text = "level 3"
 label_settings = SubResource("LabelSettings_ly2og")
+metadata/_edit_use_anchors_ = true
 
-[node name="main_menu" type="ColorRect" parent="." unique_id=611447412]
+[node name="MainMenu" type="ColorRect" parent="." unique_id=611447412]
 offset_left = 318.0
 offset_top = 277.0
 offset_right = 458.0
 offset_bottom = 414.0
 color = Color(0.67058825, 0.67058825, 0.67058825, 1)
+metadata/_edit_use_anchors_ = true
 
-[node name="main_menu_Button" type="Button" parent="main_menu" unique_id=247236770]
+[node name="MainMenuButton" type="Button" parent="MainMenu" unique_id=247236770]
 layout_mode = 0
 offset_right = 140.0
 offset_bottom = 138.0
+metadata/_edit_use_anchors_ = true
 
-[node name="main menu" type="Label" parent="main_menu" unique_id=1383709377]
+[node name="MainMenuLabel" type="Label" parent="MainMenu" unique_id=1383709377]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 22.0
@@ -115,6 +125,7 @@ offset_bottom = 106.0
 text = "Main 
 menu"
 label_settings = SubResource("LabelSettings_jj4e6")
+metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="ColorRect" parent="." unique_id=572835348]
 offset_left = 701.0
@@ -122,14 +133,16 @@ offset_top = 278.0
 offset_right = 841.0
 offset_bottom = 415.0
 color = Color(0.67058825, 0.67058825, 0.67058825, 1)
+metadata/_edit_use_anchors_ = true
 
-[node name="quit_button" type="Button" parent="Quit" unique_id=1974101854]
+[node name="QuitButton" type="Button" parent="Quit" unique_id=1974101854]
 layout_mode = 0
 offset_top = -1.0
 offset_right = 140.0
 offset_bottom = 137.0
+metadata/_edit_use_anchors_ = true
 
-[node name="quit" type="Label" parent="Quit" unique_id=122231227]
+[node name="QuitLabel" type="Label" parent="Quit" unique_id=122231227]
 layout_mode = 0
 offset_left = 31.0
 offset_top = 51.0
@@ -137,9 +150,10 @@ offset_right = 159.0
 offset_bottom = 135.0
 text = "Quit"
 label_settings = SubResource("LabelSettings_jj4e6")
+metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="level 1/level_1_Button" to="." method="_on_level_1_button_pressed"]
-[connection signal="pressed" from="level 2/level_2_Button" to="." method="_on_level_2_button_pressed"]
-[connection signal="pressed" from="level 3/level_3_Button" to="." method="_on_level_3_button_pressed"]
-[connection signal="pressed" from="main_menu/main_menu_Button" to="." method="_on_main_menu_button_pressed"]
-[connection signal="pressed" from="Quit/quit_button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Level1/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="Level2/Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Level3/Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="MainMenu/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="Quit/QuitButton" to="." method="_on_quit_button_pressed"]
