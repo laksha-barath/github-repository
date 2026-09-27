@@ -1,8 +1,24 @@
 [gd_scene format=3 uid="uid://lbbvjxnebsga"]
 
-[ext_resource type="Script" uid="uid://dvqebvbqdquxp" path="res://scripts/game_over.gd" id="1_tbwuq"]
 [ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="1_wqhvx"]
-[ext_resource type="Texture2D" uid="uid://bhs7351mrwigs" path="res://assets/Screenshot 2026-09-21 at 8.38.13 PM.png" id="1_xeevv"]
+[ext_resource type="Texture2D" uid="uid://bhs7351mrwigs" path="res://assets/levelsplainbg.png" id="1_xeevv"]
+
+[sub_resource type="GDScript" id="GDScript_wqhvx"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+		
+"
 
 [sub_resource type="LabelSettings" id="LabelSettings_tbwuq"]
 font = ExtResource("1_wqhvx")
@@ -20,7 +36,7 @@ offset_right = -10.0
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tbwuq")
+script = SubResource("GDScript_wqhvx")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1406289673]
 

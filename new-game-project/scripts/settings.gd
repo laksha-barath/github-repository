@@ -3,6 +3,7 @@ extends Control
 
 # Opens the Levels menu 
 func _on_levels_pressed() -> void:
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/levels.tscn")
 	
 	
@@ -10,10 +11,6 @@ func _on_levels_pressed() -> void:
 func _on_quit_pressed() -> void:
 	get_tree().quit()
 	
-
-# Hides the background music when the scene starts.
-func _ready() -> void:
-	BgMusic.hide()
 
 
 # Unpauses the game and hides the settings menu and returns to the game.

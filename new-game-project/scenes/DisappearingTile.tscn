@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bk6pkkqy4uy5s"]
 
-[ext_resource type="Texture2D" uid="uid://dbw11abqyoop" path="res://assets/Screenshot 2026-06-16 at 2.51.33 PM.png" id="1_jms2c"]
+[ext_resource type="Texture2D" uid="uid://dbw11abqyoop" path="res://assets/singletile.png" id="1_jms2c"]
 [ext_resource type="Script" uid="uid://c18yepcgtd6k3" path="res://scripts/disappearing_tile.gd" id="1_yw7bd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jms2c"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ck3e07hwb4mkd"]
 
-[ext_resource type="Texture2D" uid="uid://cvpdehf1i0g3x" path="res://assets/Screenshot_2026-06-17_at_1.14.58_PM-removebg-preview.png" id="1_f1j1n"]
+[ext_resource type="Texture2D" uid="uid://cvpdehf1i0g3x" path="res://assets/firehazard.png" id="1_f1j1n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lawwj"]
 size = Vector2(79, 16)

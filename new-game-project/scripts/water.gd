@@ -56,8 +56,3 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 func die():
 	await get_tree().create_timer(DEATH_DELAY).timeout
 	get_tree().reload_current_scene()
-
-
-# Hides the background music when the scene starts.
-func _ready() -> void:
-	BgMusic.hide()

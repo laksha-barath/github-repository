@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cuq0oflqcu1gw"]
 
-[ext_resource type="Texture2D" uid="uid://cg3in8hitsgpu" path="res://assets/Screenshot_2026-08-27_at_2.48.17_PM-removebg-preview.png" id="1_xvqob"]
+[ext_resource type="Texture2D" uid="uid://cg3in8hitsgpu" path="res://assets/go back button.png" id="1_xvqob"]
 
 [node name="GoBackButton" type="Button" unique_id=1868898079]
 offset_left = 6.0

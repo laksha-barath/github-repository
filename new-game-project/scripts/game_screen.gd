@@ -22,8 +22,7 @@ func _door_entered(body: Node2D) -> void:
 	if body.is_in_group("players") and body.gem_counter >= MAX_GEMS:
 		players_at_exit += 1 
 		if players_at_exit >= MAX_PLAYERS:
-			await get_tree().create_timer(0.2).timeout
-			get_tree().change_scene_to_file("res://scenes/2level.tscn")
+			get_tree().change_scene_to_file("res://scenes/level2.tscn")
 
 
 # Removes the player from the exit count when they leave the door.

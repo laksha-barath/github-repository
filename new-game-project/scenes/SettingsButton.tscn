@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8nr63q64me5y"]
 
 [ext_resource type="Script" uid="uid://c6yyr6x8uiewr" path="res://scripts/SettingsButton.gd" id="1_j1mmx"]
-[ext_resource type="Texture2D" uid="uid://di3vi7fe3hma1" path="res://assets/Screenshot_2026-08-26_at_1.12.45_PM-removebg-preview.png" id="1_jxe1r"]
+[ext_resource type="Texture2D" uid="uid://di3vi7fe3hma1" path="res://assets/settingbutton.png" id="1_jxe1r"]
 
 [node name="SettingsButton" type="Button" unique_id=829396674]
 offset_left = 19.0

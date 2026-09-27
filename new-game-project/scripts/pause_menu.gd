@@ -16,8 +16,3 @@ func _on_levels_pressed() -> void:
 # Quits the game when the Quit button is pressed.
 func _on_quit_pressed() -> void:
 	get_tree().quit()
-
-
-# Stops the background music when the Pause Menu opens.
-func _ready() -> void:
-	BgMusic.get_child(0).stop()

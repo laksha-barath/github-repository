@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cs45hxtwfg7jr"]
 
 [ext_resource type="Script" uid="uid://bbow0voa168b7" path="res://scripts/fire_gem.gd" id="1_s8oa3"]
-[ext_resource type="Texture2D" uid="uid://cl06o01yh3fjx" path="res://assets/Screenshot_2026-06-12_at_9.57.05_AM-removebg-preview.png" id="2_6ii4k"]
+[ext_resource type="Texture2D" uid="uid://cl06o01yh3fjx" path="res://assets/firegem.png" id="2_6ii4k"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in16y"]
 radius = 9.0

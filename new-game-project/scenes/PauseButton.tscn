@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b58puudddvb87"]
 
-[ext_resource type="Texture2D" uid="uid://d3p3a1luo4nw6" path="res://assets/Screenshot 2026-07-21 at 11.00.38 AM.png" id="1_5rmv1"]
+[ext_resource type="Texture2D" uid="uid://d3p3a1luo4nw6" path="res://assets/pausebutton.png" id="1_5rmv1"]
 
 [node name="PauseButton" type="Button" unique_id=1401001530]
 z_index = -1

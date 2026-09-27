@@ -15,10 +15,6 @@ run/main_scene="uid://2yvq6yiiep7y"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-BgMusic="*uid://ba72tpgnbuoda"
-
 [input]
 
 p1_left={

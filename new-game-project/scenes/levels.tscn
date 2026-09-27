@@ -1,27 +1,27 @@
 [gd_scene format=3 uid="uid://de0u4yd5o137y"]
 
-[ext_resource type="Script" uid="uid://bp7lopcaivkam" path="res://scripts/levels.gd" id="1_5ekxl"]
-[ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="2_5ekxl"]
-[ext_resource type="Texture2D" uid="uid://b5fr2l3b7g71p" path="res://assets/Screenshot 2026-09-27 at 11.04.57 AM.png" id="2_ly2og"]
+[ext_resource type="Script" uid="uid://bp7lopcaivkam" path="res://scripts/levels.gd" id="1_m25o6"]
+[ext_resource type="Texture2D" uid="uid://b5fr2l3b7g71p" path="res://assets/levelbg.png" id="2_5ch6c"]
+[ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="3_c6mwt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ly2og"]
-font = ExtResource("2_5ekxl")
+font = ExtResource("3_c6mwt")
 font_size = 45
 font_color = Color(0.6, 0.6, 0.6, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_jj4e6"]
-font = ExtResource("2_5ekxl")
+font = ExtResource("3_c6mwt")
 font_size = 40
 font_color = Color(0.6, 0.6, 0.6, 1)
 
 [node name="Levels" type="Node2D" unique_id=715746615]
 position = Vector2(665, 321)
-script = ExtResource("1_5ekxl")
+script = ExtResource("1_m25o6")
 
 [node name="LevelsSprite2D" type="Sprite2D" parent="." unique_id=2097863683]
 position = Vector2(570.0001, 310)
 scale = Vector2(1.0323223, 0.8419478)
-texture = ExtResource("2_ly2og")
+texture = ExtResource("2_5ch6c")
 
 [node name="Level1" type="ColorRect" parent="." unique_id=1008813638]
 offset_left = 491.0

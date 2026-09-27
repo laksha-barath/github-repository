@@ -3,18 +3,8 @@
 [ext_resource type="Script" uid="uid://o0vc6tur4u6d" path="res://scripts/settings.gd" id="1_es4n0"]
 [ext_resource type="Texture2D" uid="uid://lqi20bag21nb" path="res://assets/pause menu rect.png" id="2_gis3k"]
 [ext_resource type="FontFile" uid="uid://dtm6its6oxnmt" path="res://assets/QEDaveMergens.ttf" id="3_83j8s"]
-[ext_resource type="PackedScene" uid="uid://cgieexg25v27d" path="res://scenes/h_slider.tscn" id="4_gjs24"]
 [ext_resource type="FontFile" uid="uid://c01xchdnealbk" path="res://assets/Minecraft 2.ttf" id="5_am25x"]
-[ext_resource type="Texture2D" uid="uid://bciwytwba7tse" path="res://assets/Screenshot_2026-08-18_at_9.30.02_AM-removebg-preview.png" id="6_gis3k"]
 [ext_resource type="PackedScene" uid="uid://cuq0oflqcu1gw" path="res://scenes/GoBackButton.tscn" id="7_83j8s"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_4ppmf"]
-font = ExtResource("3_83j8s")
-font_size = 35
-font_color = Color(0.7792914, 0.7792914, 0.7792913, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83j8s"]
-bg_color = Color(0.57306355, 0.57942325, 0.59213513, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_uhhto"]
 font = ExtResource("5_am25x")
@@ -50,39 +40,13 @@ position = Vector2(590, 373.00003)
 scale = Vector2(2.7843194, 2.0170135)
 texture = ExtResource("2_gis3k")
 
-[node name="Label" type="Label" parent="." unique_id=189370075]
-layout_mode = 0
-offset_left = 531.0
-offset_top = 68.0
-offset_right = 726.0
-offset_bottom = 109.0
-scale = Vector2(0.8155953, 0.79999876)
-text = "Bg volume "
-label_settings = SubResource("LabelSettings_4ppmf")
-
-[node name="HSlider" parent="." unique_id=2032114236 instance=ExtResource("4_gjs24")]
-process_mode = 3
-layout_mode = 0
-offset_left = 526.00006
-offset_top = 72.99999
-offset_right = 756.6177
-offset_bottom = 240.0
-scale = Vector2(0.8155953, 0.79999876)
-theme_override_styles/grabber_area = SubResource("StyleBoxFlat_83j8s")
-
-[node name="Screenshot20260818At9_30_02AmRemovebgPreview" type="Sprite2D" parent="." unique_id=1336085141]
-modulate = Color(0.8959892, 0.89540946, 0.88858795, 1)
-position = Vector2(491, 138)
-scale = Vector2(0.17413256, 0.17080262)
-texture = ExtResource("6_gis3k")
-
 [node name="Levels" type="Button" parent="." unique_id=34870967]
 layout_mode = 0
-offset_left = 477.0
-offset_top = 274.0
-offset_right = 1034.0
-offset_bottom = 411.55676
-scale = Vector2(0.42411056, 0.41600037)
+offset_left = 448.0
+offset_top = 215.0
+offset_right = 1005.0
+offset_bottom = 352.55676
+scale = Vector2(0.4256702, 0.41753015)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 
 [node name="LevelsLabel" type="Label" parent="Levels" unique_id=2135917445]
@@ -97,11 +61,11 @@ label_settings = SubResource("LabelSettings_uhhto")
 
 [node name="Quit" type="Button" parent="." unique_id=812608756]
 layout_mode = 0
-offset_left = 477.0
-offset_top = 363.00006
-offset_right = 1034.0
-offset_bottom = 500.55682
-scale = Vector2(0.42411056, 0.41600037)
+offset_left = 448.0
+offset_top = 304.00006
+offset_right = 1005.0
+offset_bottom = 441.55682
+scale = Vector2(0.4256702, 0.41753015)
 
 [node name="QuiteLabel" type="Label" parent="Quit" unique_id=464387338]
 layout_mode = 0
@@ -110,6 +74,31 @@ offset_top = 40.3844
 offset_right = 402.69183
 offset_bottom = 147.3844
 text = "QUIT"
+label_settings = SubResource("LabelSettings_gjs24")
+
+[node name="GoBackButton" parent="." unique_id=1868898079 instance=ExtResource("7_83j8s")]
+layout_mode = 0
+offset_left = 116.99999
+offset_top = 75.0
+offset_right = 326.0
+offset_bottom = 274.0
+scale = Vector2(0.18530563, 0.1976738)
+
+[node name="Restart" type="Button" parent="." unique_id=1204792213]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 132.0
+offset_right = 1002.0
+offset_bottom = 269.55676
+scale = Vector2(0.44593465, 0.4374071)
+
+[node name="RestartLabel" type="Label" parent="Restart" unique_id=573640616]
+layout_mode = 0
+offset_left = 96.67284
+offset_top = 31.24997
+offset_right = 491.67285
+offset_bottom = 138.24997
+text = "RESTART"
 label_settings = SubResource("LabelSettings_gjs24")
 
 [node name="InstructionsLabel" type="Label" parent="." unique_id=1481124869]
@@ -132,31 +121,6 @@ Arrow Keys to move
 for fire
 "
 label_settings = SubResource("LabelSettings_gis3k")
-
-[node name="GoBackButton" parent="." unique_id=1868898079 instance=ExtResource("7_83j8s")]
-layout_mode = 0
-offset_left = 105.99999
-offset_top = 70.0
-offset_right = 315.0
-offset_bottom = 269.0
-scale = Vector2(0.18530563, 0.1976738)
-
-[node name="Restart" type="Button" parent="." unique_id=1204792213]
-layout_mode = 0
-offset_left = 474.0
-offset_top = 191.0
-offset_right = 1031.0
-offset_bottom = 328.55676
-scale = Vector2(0.42411056, 0.41600037)
-
-[node name="RestartLabel" type="Label" parent="Restart" unique_id=573640616]
-layout_mode = 0
-offset_left = 96.67284
-offset_top = 31.24997
-offset_right = 491.67285
-offset_bottom = 138.24997
-text = "RESTART"
-label_settings = SubResource("LabelSettings_gjs24")
 
 [connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
